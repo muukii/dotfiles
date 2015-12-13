@@ -1,0 +1,523 @@
+diff --git a/Couples/Resources/CoreData/couples.xcdatamodeld/couples 3.8.1.xcdatamodel/contents b/Couples/Resources/CoreData/couples.xcdatamodeld/couples 3.8.1.xcdatamodel/contents
+index 5772eb4..cafe73d 100644
+--- a/Couples/Resources/CoreData/couples.xcdatamodeld/couples 3.8.1.xcdatamodel/contents	
++++ b/Couples/Resources/CoreData/couples.xcdatamodeld/couples 3.8.1.xcdatamodel/contents	
+@@ -1,505 +1,504 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="15A284" minimumToolsVersion="Automatic">
++<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+     <entity name="Album" representedClassName="CPAlbumObject" parentEntity="Base" syncable="YES">
+         <attribute name="atIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="displayDate" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="isDefault" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="lastUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+         <relationship name="coverPhoto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="albumCovers" inverseEntity="Photo" syncable="YES"/>
+         <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="albums" inverseEntity="Photo" syncable="YES"/>
+     </entity>
+     <entity name="Answer" representedClassName="CPAnswerObject" parentEntity="Base" versionHashModifier="200" syncable="YES">
+         <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+         <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="answers" inverseEntity="Question" syncable="YES"/>
+     </entity>
+     <entity name="Article" representedClassName="Couples.Article" syncable="YES">
++        <attribute name="adNetworkName" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="articleTypeString" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="categorySortIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="endAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="featureCategoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="identity" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <attribute name="isCategoryCover" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+-        <attribute name="linkId" attributeType="Integer 64" indexed="YES" syncable="YES"/>
+-        <attribute name="linkUrl" attributeType="String" indexed="YES" syncable="YES"/>
++        <attribute name="isDownloadable" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
++        <attribute name="linkId" optional="YES" attributeType="Integer 64" syncable="YES"/>
++        <attribute name="linkUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="movieUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="ratingsSortIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="siteDescription" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="siteName" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="siteTitle" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="startAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="startAtSectionIdentifier" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+         <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="updatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+         <relationship name="articleAreas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ArticleArea" inverseName="areaArticles" inverseEntity="ArticleArea" syncable="YES"/>
+         <relationship name="articleCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleCategory" inverseName="categoryArticles" inverseEntity="ArticleCategory" syncable="YES"/>
+         <relationship name="articleFeature" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleFeature" inverseName="featuringArticles" inverseEntity="ArticleFeature" syncable="YES"/>
+         <relationship name="comingSoonMovieSchedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleSchedule" inverseName="comingSoonMovieArticles" inverseEntity="ArticleSchedule" syncable="YES"/>
+         <relationship name="currentEventSchedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleSchedule" inverseName="currentEventArticles" inverseEntity="ArticleSchedule" syncable="YES"/>
+         <relationship name="nowShowingMovieSchedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleSchedule" inverseName="nowShowingMovieArticles" inverseEntity="ArticleSchedule" syncable="YES"/>
+         <relationship name="rankingForCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleCategory" inverseName="rankingArticles" inverseEntity="ArticleCategory" syncable="YES"/>
+         <relationship name="rankingForRating" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleRatings" inverseName="ratingsArticles" inverseEntity="ArticleRatings" syncable="YES"/>
+         <relationship name="thisWeekMovieSchedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleSchedule" inverseName="thisWeekMovieArticles" inverseEntity="ArticleSchedule" syncable="YES"/>
+         <relationship name="topForCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleCategory" inverseName="topArticle" inverseEntity="ArticleCategory" syncable="YES"/>
+         <relationship name="upcomingEventSchedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleSchedule" inverseName="upcomingEventArticles" inverseEntity="ArticleSchedule" syncable="YES"/>
+     </entity>
+     <entity name="ArticleArea" representedClassName="Couples.ArticleArea" parentEntity="ArticleGroup" syncable="YES">
+         <relationship name="areaArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="articleAreas" inverseEntity="Article" syncable="YES"/>
+         <relationship name="articleCategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ArticleCategory" inverseName="articleArea" inverseEntity="ArticleCategory" syncable="YES"/>
+     </entity>
+     <entity name="ArticleCategory" representedClassName="Couples.ArticleCategory" parentEntity="ArticleGroup" syncable="YES">
+         <attribute name="articlesUpdatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="layoutPatternValue" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="layoutStyleJSON" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="updatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+         <relationship name="articleArea" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleArea" inverseName="articleCategories" inverseEntity="ArticleArea" syncable="YES"/>
+         <relationship name="articleSchedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ArticleSchedule" inverseName="articleCategory" inverseEntity="ArticleSchedule" syncable="YES"/>
+         <relationship name="categoryArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="articleCategory" inverseEntity="Article" syncable="YES"/>
+         <relationship name="categoryRatings" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleRatings" inverseName="articleCategory" inverseEntity="ArticleRatings" syncable="YES"/>
+         <relationship name="rankingArticles" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Article" inverseName="rankingForCategory" inverseEntity="Article" syncable="YES"/>
+         <relationship name="topArticle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Article" inverseName="topForCategory" inverseEntity="Article" syncable="YES"/>
+     </entity>
+     <entity name="ArticleFeature" representedClassName="Couples.ArticleFeature" parentEntity="ArticleCategory" syncable="YES">
+         <attribute name="imageURLString" optional="YES" attributeType="String" syncable="YES"/>
+         <relationship name="featuringArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="articleFeature" inverseEntity="Article" syncable="YES"/>
+     </entity>
+     <entity name="ArticleGroup" representedClassName="Couples.ArticleGroup" isAbstract="YES" syncable="YES">
+         <attribute name="identity" attributeType="Integer 64" indexed="YES" syncable="YES"/>
+         <attribute name="sortIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="title" attributeType="String" syncable="YES"/>
+     </entity>
+     <entity name="ArticleKeyword" representedClassName="Couples.ArticleKeyword" syncable="YES">
+         <attribute name="identity" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <attribute name="keyword" attributeType="String" syncable="YES"/>
+         <attribute name="sortIndex" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+     </entity>
+     <entity name="ArticleRatings" representedClassName="Couples.ArticleRatings" parentEntity="ArticleGroup" syncable="YES">
+         <relationship name="articleCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleCategory" inverseName="categoryRatings" inverseEntity="ArticleCategory" syncable="YES"/>
+         <relationship name="ratingsArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="rankingForRating" inverseEntity="Article" syncable="YES"/>
+     </entity>
+     <entity name="ArticleSchedule" representedClassName="Couples.ArticleSchedule" parentEntity="ArticleGroup" syncable="YES">
+         <attribute name="articleCategoryID" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="compoundIdentity" attributeType="String" indexed="YES" syncable="YES"/>
+         <relationship name="articleCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArticleCategory" inverseName="articleSchedules" inverseEntity="ArticleCategory" syncable="YES"/>
+         <relationship name="comingSoonMovieArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="comingSoonMovieSchedule" inverseEntity="Article" syncable="YES"/>
+         <relationship name="currentEventArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="currentEventSchedule" inverseEntity="Article" syncable="YES"/>
+         <relationship name="nowShowingMovieArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="nowShowingMovieSchedule" inverseEntity="Article" syncable="YES"/>
+         <relationship name="thisWeekMovieArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="thisWeekMovieSchedule" inverseEntity="Article" syncable="YES"/>
+         <relationship name="upcomingEventArticles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="upcomingEventSchedule" inverseEntity="Article" syncable="YES"/>
+     </entity>
+     <entity name="Base" representedClassName="CPBaseObject" isAbstract="YES" syncable="YES">
+         <attribute name="count" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="date" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+         <attribute name="dateForFavorite" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="flags" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <attribute name="fromMe" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="fromMeForFavorite" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="identity" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+         <attribute name="neuArrival" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="read" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+         <attribute name="reference" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+         <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+         <attribute name="sent" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+     </entity>
+     <entity name="Calendar" representedClassName="Couples.Calendar" syncable="YES">
+         <attribute name="allSortIndex" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="calendarDescription" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="calendarDetailDescription" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="coverImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="hiddenInFutureList" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="identity" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="linkUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="mediumIconImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="read" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="recommend" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="recommendIndex" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="remindMinutes" attributeType="Integer 32" defaultValueString="-1" syncable="YES"/>
+         <attribute name="remindToMe" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="remindToPartner" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="smallIconImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="subscribed" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="userOrderIndex" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+     </entity>
+     <entity name="Comment" representedClassName="Couples.Comment" syncable="YES">
+         <attribute name="body" attributeType="String" syncable="YES"/>
+         <attribute name="createdAt" attributeType="Date" indexed="YES" syncable="YES"/>
+         <attribute name="fromMe" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="identity" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="kindValue" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="removed" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="stateValue" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="updatedAt" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+         <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="comments" inverseEntity="Event" syncable="YES"/>
+         <relationship name="link" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Link" inverseName="comments" inverseEntity="Link" syncable="YES"/>
+         <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="comments" inverseEntity="Message" syncable="YES"/>
+         <relationship name="photo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="comments" inverseEntity="Photo" syncable="YES"/>
+         <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="comments" inverseEntity="Question" syncable="YES"/>
+     </entity>
+     <entity name="DecorationTheme" representedClassName="Couples.DecorationTheme" versionHashModifier="DecorationTheme330" syncable="YES">
+         <attribute name="dateFontSize" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+         <attribute name="dateTextColor" attributeType="Transformable" syncable="YES"/>
+         <attribute name="frameImageUrl" attributeType="String" syncable="YES"/>
+         <attribute name="identity" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="nameCenterIconUrl" attributeType="String" syncable="YES"/>
+         <attribute name="nameFontSize" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+         <attribute name="nameTextColor" attributeType="Transformable" syncable="YES"/>
+         <attribute name="removed" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="thumbnailUrl" attributeType="String" syncable="YES"/>
+         <attribute name="titleFontSize" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+         <attribute name="titleTextColor" attributeType="Transformable" syncable="YES"/>
+         <relationship name="dateFontEn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Font" inverseName="dateFontEn" inverseEntity="Font" syncable="YES"/>
+         <relationship name="dateFontJa" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Font" inverseName="dateFontJa" inverseEntity="Font" syncable="YES"/>
+         <relationship name="dateFontZhHant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Font" inverseName="dateFontZhHant" inverseEntity="Font" syncable="YES"/>
+         <relationship name="memorialCard" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MemorialCard" inverseName="decorationTheme" inverseEntity="MemorialCard" syncable="YES"/>
+         <relationship name="nameFontEn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Font" inverseName="nameFontEn" inverseEntity="Font" syncable="YES"/>
+         <relationship name="nameFontJa" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Font" inverseName="nameFontJa" inverseEntity="Font" syncable="YES"/>
+         <relationship name="nameFontZhHant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Font" inverseName="nameFontZhHant" inverseEntity="Font" syncable="YES"/>
+         <relationship name="titleFontEn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Font" inverseName="titleFontEn" inverseEntity="Font" syncable="YES"/>
+         <relationship name="titleFontJa" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Font" inverseName="titleFontJa" inverseEntity="Font" syncable="YES"/>
+         <relationship name="titleFontZhHant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Font" inverseName="titleFontZhHant" inverseEntity="Font" syncable="YES"/>
+     </entity>
+     <entity name="Event" representedClassName="Couples.Event" syncable="YES">
+         <attribute name="allDay" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="calendarId" optional="YES" attributeType="Integer 64" defaultValueString="-1" syncable="YES"/>
+         <attribute name="colorId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="commentsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="commentsMaxUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="commentsMinUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="commentsMissingBlocks" optional="YES" attributeType="Transformable" syncable="YES"/>
+         <attribute name="endAt" attributeType="Date" indexed="YES" syncable="YES"/>
+         <attribute name="fromMe" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="identity" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="instanceEvent" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="isAnniversary" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="isDefaultEvent" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="originalStartAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="read" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="recurrence" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="recurrenceUntil" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="recurringEventId" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="remindMinutes" attributeType="Integer 32" defaultValueString="-1" syncable="YES"/>
+         <attribute name="remindToMe" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="remindToPartner" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="removedFromCalendar" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+         <attribute name="startAt" attributeType="Date" indexed="YES" syncable="YES"/>
+         <attribute name="title" attributeType="String" syncable="YES"/>
+         <attribute name="transientEvent" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="updatedAt" attributeType="Date" syncable="YES"/>
+         <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="event" inverseEntity="Comment" syncable="YES"/>
+         <relationship name="favorite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Favorite" inverseName="events" inverseEntity="Favorite" syncable="YES"/>
+         <relationship name="link" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Link" inverseName="events" inverseEntity="Link" syncable="YES"/>
+-        <relationship name="memorialCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MemorialCard" inverseName="event" inverseEntity="MemorialCard" syncable="YES"/>
++        <relationship name="memorialCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MemorialCard" inverseName="event" inverseEntity="MemorialCard" syncable="YES"/>
+         <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="events" inverseEntity="Photo" syncable="YES"/>
+         <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stream" inverseName="event" inverseEntity="Stream" syncable="YES"/>
+     </entity>
+     <entity name="Favorite" representedClassName="CPFavoriteObject" parentEntity="Base" syncable="YES">
+         <attribute name="sectionIdentifier" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+         <attribute name="target" optional="YES" attributeType="String" syncable="YES"/>
+         <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="favorite" inverseEntity="Event" syncable="YES"/>
+         <relationship name="links" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Link" inverseName="favorite" inverseEntity="Link" syncable="YES"/>
+         <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Message" inverseName="favorite" inverseEntity="Message" syncable="YES"/>
+         <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="favorite" inverseEntity="Photo" syncable="YES"/>
+         <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="favorite" inverseEntity="Question" syncable="YES"/>
+     </entity>
+     <entity name="Font" representedClassName="Couples.Font" versionHashModifier="Font330" syncable="YES">
+         <attribute name="name" attributeType="String" syncable="YES"/>
+         <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+         <relationship name="dateFontEn" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="dateFontEn" inverseEntity="DecorationTheme" syncable="YES"/>
+         <relationship name="dateFontJa" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="dateFontJa" inverseEntity="DecorationTheme" syncable="YES"/>
+         <relationship name="dateFontZhHant" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="dateFontZhHant" inverseEntity="DecorationTheme" syncable="YES"/>
+         <relationship name="nameFontEn" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="nameFontEn" inverseEntity="DecorationTheme" syncable="YES"/>
+         <relationship name="nameFontJa" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="nameFontJa" inverseEntity="DecorationTheme" syncable="YES"/>
+         <relationship name="nameFontZhHant" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="nameFontZhHant" inverseEntity="DecorationTheme" syncable="YES"/>
+         <relationship name="titleFontEn" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="titleFontEn" inverseEntity="DecorationTheme" syncable="YES"/>
+         <relationship name="titleFontJa" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="titleFontJa" inverseEntity="DecorationTheme" syncable="YES"/>
+         <relationship name="titleFontZhHant" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="titleFontZhHant" inverseEntity="DecorationTheme" syncable="YES"/>
+     </entity>
+     <entity name="Link" representedClassName="Couples.Link" syncable="YES">
+         <attribute name="articleTypeString" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="detailText" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="identity" attributeType="Integer 64" indexed="YES" syncable="YES"/>
+         <attribute name="isFavorite" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="picked" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="pickedUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="siteName" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="thumbnailImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="url" attributeType="String" syncable="YES"/>
+         <attribute name="wished" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="wishedText" optional="YES" attributeType="String" syncable="YES"/>
+         <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="link" inverseEntity="Comment" syncable="YES"/>
+         <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="link" inverseEntity="Event" syncable="YES"/>
+         <relationship name="favorite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Favorite" inverseName="links" inverseEntity="Favorite" syncable="YES"/>
+         <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Message" inverseName="link" inverseEntity="Message" syncable="YES"/>
+         <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="link" inverseEntity="Post" syncable="YES"/>
+     </entity>
+     <entity name="MemorialCard" representedClassName="Couples.MemorialCard" elementID="Postcard322" versionHashModifier="MemorialCard330" syncable="YES">
+         <attribute name="decorationViewPath" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="identity" optional="YES" attributeType="Integer 64" syncable="YES"/>
+         <attribute name="removed" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="thumbnailPath" optional="YES" attributeType="String" syncable="YES"/>
+         <relationship name="decorationTheme" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DecorationTheme" inverseName="memorialCard" inverseEntity="DecorationTheme" syncable="YES"/>
+-        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="memorialCards" inverseEntity="Event" syncable="YES"/>
++        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="memorialCard" inverseEntity="Event" syncable="YES"/>
+     </entity>
+     <entity name="Message" representedClassName="Couples.Message" syncable="YES">
+         <attribute name="commentsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="commentsMaxUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="commentsMinUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="commentsMissingBlocks" optional="YES" attributeType="Transformable" syncable="YES"/>
+         <attribute name="content" optional="YES" attributeType="Binary" syncable="YES"/>
+         <attribute name="contentImageHeight" optional="YES" attributeType="Integer 32" syncable="YES"/>
+         <attribute name="contentImageWidth" optional="YES" attributeType="Integer 32" syncable="YES"/>
+         <attribute name="contentPath" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="contentUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="displayAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+         <attribute name="fromMe" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="identity" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <attribute name="kind" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+         <attribute name="read" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+-        <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
++        <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+         <attribute name="sectionIdentifier" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+         <attribute name="state" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="temporaryContentPath" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="temporaryThumbnailPath" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="thumbnailHeight" optional="YES" attributeType="Integer 32" syncable="YES"/>
+         <attribute name="thumbnailPath" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="thumbnailWidth" optional="YES" attributeType="Integer 32" syncable="YES"/>
+-        <attribute name="updatedByFavorites" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+-        <attribute name="updatedByImages" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+-        <attribute name="updatedByTalk" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+         <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="message" inverseEntity="Comment" syncable="YES"/>
+         <relationship name="favorite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Favorite" inverseName="messages" inverseEntity="Favorite" syncable="YES"/>
+         <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MessageGroup" inverseName="messages" inverseEntity="MessageGroup" syncable="YES"/>
+         <relationship name="link" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Link" inverseName="messages" inverseEntity="Link" syncable="YES"/>
+         <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stream" inverseName="message" inverseEntity="Stream" syncable="YES"/>
+         <compoundIndexes>
+             <compoundIndex>
+                 <index value="removed"/>
+-                <index value="updatedByTalk"/>
+                 <index value="displayAt"/>
+             </compoundIndex>
+         </compoundIndexes>
+     </entity>
+     <entity name="MessageGroup" representedClassName="Couples.MessageGroup" syncable="YES">
+         <attribute name="dayString" attributeType="String" indexed="YES" syncable="YES"/>
+         <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Message" inverseName="group" inverseEntity="Message" syncable="YES"/>
+     </entity>
+     <entity name="MissingRange" representedClassName="Couples.MissingRange" syncable="YES">
+         <attribute name="max" attributeType="Date" syncable="YES"/>
+         <attribute name="min" attributeType="Date" syncable="YES"/>
+         <attribute name="page" attributeType="Integer 32" defaultValueString="1" syncable="YES"/>
+         <attribute name="state" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <relationship name="status" maxCount="1" deletionRule="Nullify" destinationEntity="RangeStatus" inverseName="missingRanges" inverseEntity="RangeStatus" syncable="YES"/>
+         <compoundIndexes>
+             <compoundIndex>
+                 <index value="max"/>
+                 <index value="min"/>
+                 <index value="page"/>
+             </compoundIndex>
+         </compoundIndexes>
+     </entity>
+     <entity name="Note" representedClassName="Couples.Note" versionHashModifier="320" syncable="YES">
+         <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="fromMe" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="identity" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <attribute name="postCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="postsMaxUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="postsMinUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="postsMissingBlocks" optional="YES" attributeType="Transformable" syncable="YES"/>
+         <attribute name="readAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="note" inverseEntity="Post" syncable="YES"/>
+     </entity>
+     <entity name="Notification" representedClassName="Couples.Notification" syncable="YES">
+         <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="identity" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="kind" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+         <attribute name="read" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+         <attribute name="target" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="targetIdentity" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="updatedAt" attributeType="Date" syncable="YES"/>
+     </entity>
+     <entity name="Package" representedClassName="Couples.Package" syncable="YES">
+         <attribute name="author" attributeType="String" syncable="YES"/>
+         <attribute name="defaultPackage" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="displayPrice" attributeType="String" syncable="YES"/>
+         <attribute name="downloaded" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="downloadedZipPath" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="downloadExpiredAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="enabled" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="iconImageUrl" attributeType="String" syncable="YES"/>
+         <attribute name="identity" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <attribute name="imageUrl" attributeType="String" syncable="YES"/>
+         <attribute name="incentiveAppId" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="incentiveAppUrlScheme" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="incentiveButtonText" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="incentiveDescription" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="incentiveLinkUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="incentiveTo" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="lastSelectedPage" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+         <attribute name="name" attributeType="String" syncable="YES"/>
+         <attribute name="packageDescription" attributeType="String" syncable="YES"/>
+         <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="purchasedPackage" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="read" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+         <attribute name="tabIndex" optional="YES" attributeType="Integer 32" syncable="YES"/>
+         <attribute name="thumbnailImageHeight" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+         <attribute name="thumbnailImageUrl" attributeType="String" syncable="YES"/>
+         <attribute name="thumbnailImageWidth" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+         <attribute name="updatedAt" attributeType="Date" syncable="YES"/>
+         <attribute name="usageExpiredAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="verified" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="zipUrl" attributeType="String" syncable="YES"/>
+         <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PackageGroup" inverseName="packages" inverseEntity="PackageGroup" syncable="YES"/>
+         <relationship name="stickers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sticker" inverseName="package" inverseEntity="Sticker" syncable="YES"/>
+     </entity>
+     <entity name="PackageGroup" representedClassName="Couples.PackageGroup" syncable="YES">
+         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="tag" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <relationship name="packages" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Package" inverseName="groups" inverseEntity="Package" syncable="YES"/>
+     </entity>
+     <entity name="Photo" representedClassName="CPPhotoObject" parentEntity="Base" syncable="YES">
+         <attribute name="commentsMaxUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="commentsMinUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="commentsMissingBlocks" optional="YES" attributeType="Transformable" syncable="YES"/>
+         <attribute name="cover" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="height" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="sectionIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="transientImageUrl" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+         <attribute name="width" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <relationship name="albumCovers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Album" inverseName="coverPhoto" inverseEntity="Album" syncable="YES"/>
+         <relationship name="albums" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Album" inverseName="photos" inverseEntity="Album" syncable="YES"/>
+         <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="photo" inverseEntity="Comment" syncable="YES"/>
+         <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="photos" inverseEntity="Event" syncable="YES"/>
+         <relationship name="favorite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Favorite" inverseName="photos" inverseEntity="Favorite" syncable="YES"/>
+         <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stream" inverseName="photos" inverseEntity="Stream" syncable="YES"/>
+     </entity>
+     <entity name="Post" representedClassName="Couples.Post" syncable="YES">
+         <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="fromMe" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="identity" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <attribute name="postCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+         <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <relationship name="link" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Link" inverseName="posts" inverseEntity="Link" syncable="YES"/>
+         <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="posts" inverseEntity="Note" syncable="YES"/>
+     </entity>
+     <entity name="Question" representedClassName="CPQuestionObject" parentEntity="Base" syncable="YES">
+         <attribute name="commentsMaxUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="commentsMinUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="commentsMissingBlocks" optional="YES" attributeType="Transformable" syncable="YES"/>
+         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+         <relationship name="answers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Answer" inverseName="question" inverseEntity="Answer" syncable="YES"/>
+         <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="question" inverseEntity="Comment" syncable="YES"/>
+         <relationship name="favorite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Favorite" inverseName="questions" inverseEntity="Favorite" syncable="YES"/>
+         <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stream" inverseName="questions" inverseEntity="Stream" syncable="YES"/>
+         <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="questions" inverseEntity="Tag" syncable="YES"/>
+     </entity>
+     <entity name="RangeStatus" representedClassName="Couples.RangeStatus" syncable="YES">
+         <attribute name="identifier" attributeType="String" indexed="YES" syncable="YES"/>
+         <attribute name="maxAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="minAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <relationship name="missingRanges" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MissingRange" inverseName="status" inverseEntity="MissingRange" syncable="YES"/>
+     </entity>
+     <entity name="Sticker" representedClassName="Couples.Sticker" syncable="YES">
+         <attribute name="identity" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="lastUsedAt" optional="YES" attributeType="Date" syncable="YES"/>
+         <attribute name="packageId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+         <relationship name="package" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Package" inverseName="stickers" inverseEntity="Package" syncable="YES"/>
+     </entity>
+     <entity name="Stream" representedClassName="CPStreamObject" parentEntity="Base" syncable="YES">
+         <attribute name="sectionIdentifier" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+         <attribute name="target" optional="YES" attributeType="String" syncable="YES"/>
+         <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="stream" inverseEntity="Event" syncable="YES"/>
+         <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="stream" inverseEntity="Message" syncable="YES"/>
+         <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="stream" inverseEntity="Photo" syncable="YES"/>
+         <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="stream" inverseEntity="Question" syncable="YES"/>
+     </entity>
+     <entity name="Tag" representedClassName="CPTagObject" parentEntity="Base" syncable="YES">
+         <relationship name="packages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Package" syncable="YES"/>
+         <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="tags" inverseEntity="Question" syncable="YES"/>
+     </entity>
+     <entity name="Wallpaper" representedClassName="Couples.Wallpaper" syncable="YES">
+         <attribute name="identity" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+         <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="incentiveTo" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="isUsed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="orderIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
++        <attribute name="pairImage" optional="YES" attributeType="Boolean" syncable="YES"/>
+         <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+     </entity>
+     <entity name="Weather" representedClassName="CPWeatherObject" parentEntity="Base" syncable="YES">
+         <attribute name="areaName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+         <attribute name="latitude" optional="YES" attributeType="Double" syncable="YES"/>
+         <attribute name="longitude" optional="YES" attributeType="Double" syncable="YES"/>
+         <attribute name="maxTemperature" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="minTemperature" optional="YES" attributeType="String" syncable="YES"/>
+         <attribute name="probability" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+     </entity>
+     <elements>
+         <element name="Album" positionX="160" positionY="192" width="128" height="150"/>
+         <element name="Answer" positionX="160" positionY="192" width="128" height="75"/>
+-        <element name="Article" positionX="-414" positionY="-1656" width="128" height="465"/>
++        <element name="Article" positionX="-414" positionY="-1656" width="128" height="495"/>
+         <element name="ArticleArea" positionX="-405" positionY="-1566" width="128" height="75"/>
+         <element name="ArticleCategory" positionX="-387" positionY="-1548" width="128" height="210"/>
+         <element name="ArticleFeature" positionX="-414" positionY="-1575" width="128" height="75"/>
+         <element name="ArticleGroup" positionX="-396" positionY="-1557" width="128" height="90"/>
+         <element name="ArticleKeyword" positionX="-414" positionY="-1575" width="128" height="90"/>
+         <element name="ArticleRatings" positionX="-405" positionY="-1566" width="128" height="75"/>
+         <element name="ArticleSchedule" positionX="-414" positionY="-1575" width="128" height="165"/>
+         <element name="Base" positionX="-47" positionY="-819" width="128" height="270"/>
+         <element name="Calendar" positionX="-173" positionY="-666" width="128" height="330"/>
+         <element name="Comment" positionX="-245" positionY="-819" width="128" height="240"/>
+         <element name="DecorationTheme" positionX="961" positionY="27" width="128" height="360"/>
+         <element name="Event" positionX="441" positionY="-1728" width="128" height="585"/>
+         <element name="Favorite" positionX="-189" positionY="228" width="128" height="150"/>
+         <element name="Font" positionX="475" positionY="189" width="128" height="30"/>
+         <element name="Link" positionX="466" positionY="126" width="128" height="300"/>
+         <element name="MemorialCard" positionX="430" positionY="162" width="128" height="135"/>
+-        <element name="Message" positionX="9" positionY="426" width="128" height="570"/>
++        <element name="Message" positionX="9" positionY="426" width="128" height="525"/>
+         <element name="MessageGroup" positionX="-414" positionY="-1575" width="128" height="73"/>
+         <element name="MissingRange" positionX="-414" positionY="-1575" width="128" height="120"/>
+         <element name="Note" positionX="673" positionY="450" width="128" height="240"/>
+         <element name="Notification" positionX="-621" positionY="-684" width="128" height="180"/>
+         <element name="Package" positionX="-252" positionY="627" width="128" height="540"/>
+         <element name="PackageGroup" positionX="-414" positionY="-1575" width="128" height="90"/>
+         <element name="Photo" positionX="756" positionY="3" width="128" height="285"/>
+         <element name="Post" positionX="376" positionY="422" width="128" height="195"/>
+         <element name="Question" positionX="403" positionY="90" width="128" height="180"/>
+         <element name="RangeStatus" positionX="-405" positionY="-1566" width="128" height="105"/>
+         <element name="Sticker" positionX="223" positionY="-108" width="128" height="135"/>
+         <element name="Stream" positionX="432" positionY="9" width="128" height="133"/>
+         <element name="Tag" positionX="54" positionY="45" width="128" height="75"/>
+-        <element name="Wallpaper" positionX="423" positionY="761" width="128" height="148"/>
++        <element name="Wallpaper" positionX="423" positionY="761" width="128" height="165"/>
+         <element name="Weather" positionX="-191" positionY="201" width="128" height="148"/>
+     </elements>
+ </model>
+\ No newline at end of file

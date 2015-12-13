@@ -1,0 +1,68 @@
+"*":
+  "recent-files":
+    updated: false
+  "remember-session":
+    path: "/Users/Muukii/Develop/iOS/Eureka/couples-ios-tmp"
+    x: 0
+    y: 23
+    tabs: "/Users/Muukii/Develop/iOS/Eureka/couples-ios-tmp/Couples/Common/Requests/EventsRequest.swift&&/Users/Muukii/Develop/iOS/Eureka/couples-ios/Misc/Scripts/PostSlack.go&&/Users/Muukii/Develop/iOS/Eureka/couples-ios/Makefile&&/Users/Muukii/Develop/iOS/Eureka/couples-ios-tmp/Couples/Common/Objects/CPFontObject.h&&/Users/Muukii/Develop/iOS/Eureka/couples-ios-tmp/Couples/Scenes/Anniversary/CPAnniversaryController.m&&/Users/Muukii/Develop/iOS/Eureka/couples-ios-tmp/Couples/Scenes/Calendar/CPEventDetailController.m&&/Users/Muukii/Develop/iOS/Eureka/couples-ios-tmp/Couples/Scenes/Anniversary/CPAnniversaryEditController.m"
+    selectedTab: ""
+    width: 2560
+    height: 1373
+    treeWidth: 200
+  core:
+    followSymlinks: true
+    disabledPackages: [
+      "minimap"
+      "emmet"
+    ]
+    themes: [
+      "spacegray-dark-ui"
+      "fruits"
+    ]
+  "exception-reporting":
+    userId: "0e30ce91-7fe5-325d-03e6-5231bca7e331"
+  welcome:
+    showOnStartup: false
+  editor:
+    fontFamily: "SourceCodePro-Regular"
+    showInvisibles: true
+    tabLength: 4
+    undoGroupingInterval: 10
+    invisibles:
+      tab: "▸"
+    softWrap: true
+    showIndentGuide: true
+    fontSize: 13
+    backUpBeforeSaving: true
+  "go-plus":
+    goPath: "/Users/Muukii/go"
+    goInstallation: "/Users/Muukii/local/go"
+    golintArgs: "-min_confidence=1.1"
+  "go-playground":
+    go_executable_path: "/Users/Muukii/local/go/bin/go"
+  linter:
+    errorPanelHeight: 22
+  "remote-sync": {}
+  "vim-mode":
+    useSmartcaseForSearch: true
+  term2:
+    colors: {}
+  emmet: {}
+  "autoclose-html": {}
+  notifications:
+    showErrorsInDevMode: true
+  "filetype-color":
+    enabled: "false"
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+  "linter-swiftc": {}
+  "remote-edit": {}
+  "atom-beautify":
+    _analyticsUserId: "8ea4a37c-3566-455c-9018-d043b84cea1c"
+    ruby_indent_size: 2
+    ruby_indent_char: "\t"
+  "linter-rubocop": {}
+".dockerfile.source":
+  editor:
+    preferredLineLength: 1000

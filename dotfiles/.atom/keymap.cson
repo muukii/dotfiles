@@ -1,0 +1,27 @@
+# Your keymap
+#
+# Atom keymaps work similarly to stylesheets. Just as stylesheets use selectors
+# to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+
+'atom-text-editor':
+    'ctrl-alt-b': 'beautify:beautify-editor'
+    'ctrl-w |' : 'pane:split-right'
+    'ctrl-w -' : 'pane:split-down'
+    'cmd-shift-i' : 'script:close-view'
+    'ctrl-k' : 'editor:delete-to-end-of-line'
+    'esc' : 'atom-notifications:close'
+    'ctrl-i' : 'atom-beautify:beautify-editor'
+#pane
+
+# '.platform-darwin .editor':
+# 'cmd-b' : 'script:run'
+#
+# 'body':
+#   'ctrl-P': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
