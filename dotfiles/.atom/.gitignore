@@ -5,3 +5,4 @@ packages
 storage
 .DS_Store
 npm-debug.log
+blob-store/*

@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 27-Feb-2015.
+# Last Change: 17-Dec-2015.
 
 # source common shell run command
 source ~/.shrc.common
@@ -181,3 +181,6 @@ export PATH=$COCOS_CONSOLE_ROOT:$PATH
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 export COCOS_TEMPLATES_ROOT=/Users/Muukii/Downloads/cocos2d-x-3.4/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+# VSCode
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
