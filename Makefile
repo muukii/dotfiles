@@ -10,6 +10,7 @@ symlink:
 
 xcode:
 	sh XcodeLink.sh
+	defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 
 color:
 	sh ColorsLink.sh
