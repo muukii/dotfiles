@@ -19,4 +19,9 @@ vim:
 	git clone http://github.com/gmarik/vundle.git ~/.vim/vundle.git
 
 nvm:
-	curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+
+zsh:
+	brew install zsh
+	sudo sh -c 'echo $(which zsh) >> /etc/shells'
+	chsh -s /usr/local/bin/zsh
