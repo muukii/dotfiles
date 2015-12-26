@@ -114,6 +114,8 @@
 # hub 
         pr = pull-request
 		ksdiff = !git difftool -y -t Kaleidoscope
+# scripts
+	findLargeFiles = !sh ~/dotfiles/scripts/git_find_big.sh
 [filter "media"]
 	required = true
 	clean = git media clean %f
