@@ -55,7 +55,6 @@
         ft   = fetch
 # push
         po  = push origin
-        pom = push origin master
         pod = push origin develop
         pg  = push github
         pgm = push github master
@@ -110,7 +109,6 @@
         wip = !git add . && git add -u && git commit -m 'wip :D'
 	bump = !git add . && git add -u && git commit -m 'Bump up'
         revise = !git add . && git add -u && git commit -m 'Revice'
-        pom = !git add . && git add -u && git commit -m 'tmp' && git push origin master
         tidy = !git add . && git add -u && git commit -m 'Tidy up'
 	update = !git add . && git add -u && git commit -m 'Update'
 # hub 
