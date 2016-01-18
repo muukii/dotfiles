@@ -1,4 +1,4 @@
-install: symlink xcode vim color atom nvm 
+install: symlink xcode vim color atom nvm
 
 atom:
 	sh AtomSync.sh
@@ -21,6 +21,8 @@ vim:
 
 nvm:
 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+gvm:
+	bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 
 zsh:
 	brew install zsh

@@ -8,6 +8,26 @@
 		<array>
 			<dict>
 				<key>Action</key>
+				<string>toggleXVim:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>XVim.Enable</string>
+				<key>Group</key>
+				<string>XVim</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>$@X</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>XVim</string>
+				<key>Title</key>
+				<string>Enable</string>
+			</dict>
+			<dict>
+				<key>Action</key>
 				<string>showDocumentItemsMenu:</string>
 				<key>Alternate</key>
 				<string>NO</string>

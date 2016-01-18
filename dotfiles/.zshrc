@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 17-Dec-2015.
+# Last Change: 12-Jan-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -152,35 +152,35 @@ function precmd ()
                 _z --add "$(pwd -P)"
         fi
 }
-alias ls='ls -a -G'
-alias dev='cd ~/Develop'
 
-#docker
-alias dl='docker ps -l -q'
-alias da='docker ps -a'
-alias dat='docker attach `dl`'
-
-#server
-alias server='python -m SimpleHTTPServer'
-
-#processing
-alias processing='processing-java'
-
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# gvm
+source /Users/Muukii/.gvm/scripts/gvm
+
+# gi
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 #local
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/Muukii/Downloads/cocos2d-x-3.4/tools/cocos2d-console/bin
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Users/Muukii/Downloads/cocos2d-x-3.4/templates
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
-
 # VSCode
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+# alias
+
+alias ls='ls -a -G'
+alias dev='cd ~/Develop'
+
+## docker
+alias dl='docker ps -l -q'
+alias da='docker ps -a'
+alias dat='docker attach `dl`'
+
+## server
+alias server='python -m SimpleHTTPServer'
+
+## processing
+alias processing='processing-java'
