@@ -15,11 +15,12 @@
     followSymlinks: true
     themes: [
       "spacegray-dark-ui"
-      "fruits"
+      "neka-syntax"
     ]
   editor:
     backUpBeforeSaving: true
-    fontFamily: "SourceCodePro-Regular"
+    fontFamily: "SourceCodePro-Medium"
+    fontSize: 13
     invisibles:
       tab: "▸"
     scrollPastEnd: true
@@ -33,6 +34,10 @@
     userId: "0e30ce91-7fe5-325d-03e6-5231bca7e331"
   "filetype-color":
     enabled: "false"
+  "gist-it":
+    newGistsDefaultToPrivate: true
+    openAfterCreate: true
+    userToken: "b2b1dc297c9d17d0c6ebadd713fc53aee6a28bc5"
   "git-projects":
     rootPath: "~/Develop; ~/Dropbox/"
   "go-playground":
