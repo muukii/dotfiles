@@ -14,13 +14,13 @@
     ]
     followSymlinks: true
     themes: [
-      "spacegray-dark-ui"
-      "neka-syntax"
+      "Neka-Theme"
+      "Neka-Syntax"
     ]
   editor:
     backUpBeforeSaving: true
     fontFamily: "SourceCodePro-Medium"
-    fontSize: 13
+    fontSize: 11
     invisibles:
       tab: "▸"
     scrollPastEnd: true
@@ -43,9 +43,7 @@
   "go-playground":
     go_executable_path: "/Users/Muukii/local/go/bin/go"
   "go-plus":
-    goInstallation: "/Users/Muukii/local/go"
-    goPath: "/Users/Muukii/go"
-    golintArgs: "-min_confidence=1.1"
+    environmentOverridesConfiguration: false
   linter:
     errorPanelHeight: 22
   "linter-eslint":

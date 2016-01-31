@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 12-Jan-2016.
+# Last Change: 30-Jan-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -168,6 +168,10 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 # VSCode
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+# direnv
+eval "$(direnv hook zsh)"
+export EDITOR="vim"
 
 # alias
 
