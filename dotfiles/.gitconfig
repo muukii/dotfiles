@@ -4,6 +4,8 @@
 [merge]
     tool = vimdiff
 	ff = false
+[mergetool "mergepbx"]
+	cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
 [core]
 	excludesfile = /Users/Muukii/.gitignore_global
 	editor = vim

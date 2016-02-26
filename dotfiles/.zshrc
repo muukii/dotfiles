@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 30-Jan-2016.
+# Last Change: 10-Feb-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -172,6 +172,12 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 # direnv
 eval "$(direnv hook zsh)"
 export EDITOR="vim"
+
+# swiftenv
+export SWIFTENV_ROOT="$HOME/.swiftenv"
+export PATH="$SWIFTENV_ROOT/bin:$PATH"
+eval "$(swiftenv init -)"
+
 
 # alias
 

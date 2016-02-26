@@ -20,7 +20,7 @@
   editor:
     backUpBeforeSaving: true
     fontFamily: "SourceCodePro-Medium"
-    fontSize: 11
+    fontSize: 13
     invisibles:
       tab: "▸"
     scrollPastEnd: true
