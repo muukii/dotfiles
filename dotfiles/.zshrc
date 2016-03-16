@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 10-Mar-2016.
+# Last Change: 16-Mar-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -157,9 +157,6 @@ function precmd ()
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# gvm
-source /Users/Muukii/.gvm/scripts/gvm
-
 # gi
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
@@ -169,24 +166,7 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 # VSCode
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
-# direnv
-eval "$(direnv hook zsh)"
-export EDITOR="vim"
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then
-	eval "$(rbenv init -)"
-fi
-
-# swiftenv
-export SWIFTENV_ROOT="$HOME/.swiftenv"
-export PATH="$SWIFTENV_ROOT/bin:$PATH"
-eval "$(swiftenv init -)"
-
-
 # alias
-
 alias ls='ls -a -G'
 alias dev='cd ~/Develop'
 

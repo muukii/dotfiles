@@ -28,3 +28,9 @@ zsh:
 	brew install zsh
 	sudo sh -c 'echo $(which zsh) >> /etc/shells'
 	chsh -s /usr/local/bin/zsh
+
+direnv:
+	git clone https://github.com/direnv/direnv
+	cd direnv
+	make install
+	rm -r direnv
