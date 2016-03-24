@@ -34,3 +34,6 @@ direnv:
 	cd direnv
 	make install
 	rm -r direnv
+
+rbenv:
+	git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
