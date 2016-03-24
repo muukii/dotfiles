@@ -37,3 +37,6 @@ direnv:
 
 rbenv:
 	git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+
+swiftenv:
+	git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
