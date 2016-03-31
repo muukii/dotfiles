@@ -21,6 +21,7 @@ vim:
 
 nvm:
 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+
 gvm:
 	bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 
@@ -30,13 +31,16 @@ zsh:
 	chsh -s /usr/local/bin/zsh
 
 direnv:
-	git clone https://github.com/direnv/direnv
-	cd direnv
-	make install
-	rm -r direnv
+	brew install direnv
 
 rbenv:
 	git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 
 swiftenv:
 	git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
+
+peco:
+	wget https://github.com/peco/peco/releases/download/v0.3.3/peco_linux_amd64.tar.gz
+	tar xzvf peco_linux_amd64.tar.gz 
+	mv peco_linux_amd64/peco /usr/local/bin
+	peco --version

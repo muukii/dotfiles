@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 16-Mar-2016.
+# Last Change: 31-Mar-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -180,3 +180,11 @@ alias server='python -m SimpleHTTPServer'
 
 ## processing
 alias processing='processing-java'
+
+## peco
+function ch() { git ch `git ba | peco --layout bottom-up --prompt "Git Branch"` ;}
+
+## anyframe
+fpath=($HOME/.zsh/anyframe(N-/) $fpath)
+autoload -Uz anyframe-init
+anyframe-init
