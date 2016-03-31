@@ -11,8 +11,13 @@ if [ -s "$HOME/.gvm/scripts/gvm" ]; then
 fi
 
 # Go
-export GOPATH=~/go
-export PATH="$GOPATH/bin:$PATH"
+#export GOPATH=~/go
+#export PATH="$GOPATH/bin:$PATH"
+
+# anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
 
 # swiftenv
 export SWIFTENV_ROOT="$HOME/.swiftenv"
