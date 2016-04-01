@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 31-Mar-2016.
+# Last Change: 01-Apr-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -182,7 +182,25 @@ alias server='python -m SimpleHTTPServer'
 alias processing='processing-java'
 
 ## peco
-function ch() { git ch `git ba | peco --layout bottom-up --prompt "Git Branch"` ;}
+function ch() {
+	git ch `git ba | peco --layout bottom-up --prompt "Git Branch" | sed 's|remotes/origin/||'`
+}
+function zz() {
+  which peco z > /dev/null
+  if [ $? -ne 0 ]; then
+    echo "Please install peco and z"
+    return 1
+  fi
+  local res=$(z | sort -rn | cut -c 12- | peco --layout bottom-up --prompt "Dir")
+  if [ -n "$res" ]; then
+    BUFFER+="cd $res"
+    zle accept-line
+  else
+    return 1
+  fi
+}
+zle -N zz
+bindkey '^f' zz
 
 ## anyframe
 fpath=($HOME/.zsh/anyframe(N-/) $fpath)
