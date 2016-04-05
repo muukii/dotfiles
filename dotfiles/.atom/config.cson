@@ -1,5 +1,6 @@
 "*":
   "api-workbench": {}
+  "atom-alignment": {}
   "atom-beautify":
     _analyticsUserId: "8ea4a37c-3566-455c-9018-d043b84cea1c"
     html_wrap_attributes_indent_size: 2
@@ -8,6 +9,7 @@
     js_eval_code: true
     ruby_indent_char: "\t"
     ruby_indent_size: 2
+  "atom-html-preview": {}
   "autoclose-html": {}
   "autocomplete-plus":
     confirmCompletion: "enter"
@@ -18,8 +20,8 @@
     ]
     followSymlinks: true
     themes: [
-      "Neka-Theme"
-      "Neka-Syntax"
+      "spacegray-dark-ui"
+      "spacegray-dark-syntax"
     ]
   editor:
     backUpBeforeSaving: true
@@ -57,6 +59,7 @@
   notifications:
     showErrorsInDevMode: true
   "one-light-ui": {}
+  pigments: {}
   "recent-files":
     updated: false
   "remember-session":
