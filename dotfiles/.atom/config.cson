@@ -3,12 +3,60 @@
   "atom-alignment": {}
   "atom-beautify":
     _analyticsUserId: "8ea4a37c-3566-455c-9018-d043b84cea1c"
+    apex: {}
+    arduino: {}
+    c: {}
+    cfml: {}
+    coffeescript: {}
+    cpp: {}
+    cs: {}
+    css: {}
+    d: {}
+    ejs: {}
+    erb:
+      beautify_on_save: true
+    fortran: {}
+    general:
+      _analyticsUserId: "440f344a-9a27-4cfc-b13e-80e1d9098cc0"
+    gherkin: {}
+    handlebars: {}
+    html: {}
     html_wrap_attributes_indent_size: 2
+    jade: {}
+    java: {}
+    js: {}
     js_brace_style: "expand"
     js_end_with_newline: true
     js_eval_code: true
+    json: {}
+    jsx: {}
+    latex: {}
+    less: {}
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php: {}
+    python: {}
+    riot: {}
+    ruby: {}
     ruby_indent_char: "\t"
     ruby_indent_size: 2
+    rust: {}
+    sass: {}
+    scss: {}
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
   "atom-html-preview": {}
   "autoclose-html": {}
   "autocomplete-plus":
@@ -21,12 +69,12 @@
     followSymlinks: true
     themes: [
       "spacegray-dark-ui"
-      "spacegray-dark-syntax"
+      "Lux-Syntax"
     ]
   editor:
     backUpBeforeSaving: true
-    fontFamily: "SourceCodePro-Medium"
-    fontSize: 13
+    fontFamily: "SourceCodePro-Regular"
+    fontSize: 12
     invisibles:
       tab: "▸"
     scrollPastEnd: true
@@ -34,6 +82,7 @@
     showInvisibles: true
     softWrap: true
     tabLength: 4
+    tabType: "soft"
     undoGroupingInterval: 10
   emmet: {}
   "exception-reporting":
@@ -51,7 +100,7 @@
   "go-plus":
     environmentOverridesConfiguration: false
   linter:
-    errorPanelHeight: 22
+    errorPanelHeight: 108
   "linter-eslint":
     useGlobalEslint: true
   "linter-rubocop": {}
@@ -86,3 +135,6 @@
 ".dockerfile.source":
   editor:
     preferredLineLength: 1000
+".ini.source":
+  editor:
+    tabLength: 4

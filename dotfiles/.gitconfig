@@ -112,6 +112,7 @@
 	bump = !git add . && git add -u && git commit -m 'Bump up'
         revise = !git add . && git add -u && git commit -m 'Revice'
         tidy = !git add . && git add -u && git commit -m 'Tidy up'
+        revise = !git add . && git add -u && git commit -m 'Revise'
 	update = !git add . && git add -u && git commit -m 'Update'
 # hub 
         pr = pull-request

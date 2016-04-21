@@ -163,9 +163,6 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 #local
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-# VSCode
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
 # alias
 alias ls='ls -a -G'
 alias dev='cd ~/Develop'
