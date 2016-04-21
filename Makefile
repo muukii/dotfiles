@@ -20,7 +20,7 @@ vim:
 	git clone http://github.com/gmarik/vundle.git ~/.vim/vundle.git
 
 nvm:
-	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
 
 gvm:
 	bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
