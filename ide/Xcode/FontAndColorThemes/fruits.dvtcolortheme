@@ -40,6 +40,8 @@
 	<string>0.935976 0.931101 0.931223 0.9</string>
 	<key>DVTMarkupTextEmphasisFont</key>
 	<string>.HelveticaNeueDeskInterface-Italic - 13.0</string>
+	<key>DVTMarkupTextInlineCodeColor</key>
+	<string>0.935976 0.931101 0.931223 0.7</string>
 	<key>DVTMarkupTextLinkColor</key>
 	<string>0.762013 0.39167 0.435382 1</string>
 	<key>DVTMarkupTextLinkFont</key>
@@ -111,7 +113,7 @@
 		<key>xcode.syntax.identifier.variable.system</key>
 		<string>0.527248 0.764998 0.839709 1</string>
 		<key>xcode.syntax.keyword</key>
-		<string>0.891002 0.260365 0.342343 1</string>
+		<string>0.890196 0.258824 0.341176 1</string>
 		<key>xcode.syntax.number</key>
 		<string>0.762013 0.39167 0.435382 1</string>
 		<key>xcode.syntax.plain</key>

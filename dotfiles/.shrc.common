@@ -2,7 +2,7 @@
 #
 # File:        .shrc.common
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 19-Dec-2014.
+# Last Change: 28-Apr-2016.
 
 # alias
 alias ce='cd ../'
@@ -52,3 +52,41 @@ parse_git_branch()
 {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
 }
+
+#eval "$(pyenv init -)"
+export PATH=$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH
+#export PATH=$HOME/.pyenv/versions/2.7.8/bin:$PATH
+
+# go version manager
+if [ -s "$HOME/.gvm/scripts/gvm" ]; then
+  source "$HOME/.gvm/scripts/gvm"
+  gvm use go1.6
+fi
+
+# Go
+#export GOPATH=~/go
+#export PATH="$GOPATH/bin:$PATH"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
+
+# swiftenv
+export SWIFTENV_ROOT="$HOME/.swiftenv"
+export PATH="$SWIFTENV_ROOT/bin:$PATH"
+eval "$(swiftenv init -)"
+
+# direnv
+eval "$(direnv hook zsh)"
+export EDITOR="vim"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then
+	eval "$(rbenv init -)"
+fi

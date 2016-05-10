@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 01-Apr-2016.
+# Last Change: 01-May-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -153,9 +153,6 @@ function precmd ()
         fi
 }
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # gi
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
@@ -197,7 +194,7 @@ function zz() {
   fi
 }
 zle -N zz
-bindkey '^f' zz
+bindkey '^t' zz
 
 ## anyframe
 fpath=($HOME/.zsh/anyframe(N-/) $fpath)

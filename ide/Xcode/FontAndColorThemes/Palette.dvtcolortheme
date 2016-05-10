@@ -21,7 +21,7 @@
 	<key>DVTConsoleExectuableOutputTextColor</key>
 	<string>0.935976 0.931101 0.931223 1</string>
 	<key>DVTConsoleExectuableOutputTextFont</key>
-	<string>SourceCodePro-Regular - 13.0</string>
+	<string>SourceCodePro-Regular - 10.0</string>
 	<key>DVTConsoleTextBackgroundColor</key>
 	<string>0.117647 0.145098 0.192157 1</string>
 	<key>DVTConsoleTextInsertionPointColor</key>

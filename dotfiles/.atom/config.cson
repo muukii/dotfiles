@@ -62,14 +62,27 @@
   "autocomplete-plus":
     confirmCompletion: "enter"
   core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "minimap"
       "emmet"
+      "language-ruby-on-rails"
     ]
     followSymlinks: true
     themes: [
       "spacegray-dark-ui"
-      "Lux-Syntax"
+      "fruits-syntax"
     ]
   editor:
     backUpBeforeSaving: true
@@ -87,6 +100,8 @@
   emmet: {}
   "exception-reporting":
     userId: "0e30ce91-7fe5-325d-03e6-5231bca7e331"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
   "filetype-color":
     enabled: "false"
   "gist-it":
@@ -105,8 +120,11 @@
     useGlobalEslint: true
   "linter-rubocop": {}
   "linter-swiftc": {}
-  notifications:
-    showErrorsInDevMode: true
+  notifications: {}
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-home":
+      showHome: false
   "one-light-ui": {}
   pigments: {}
   "recent-files":
@@ -132,9 +150,31 @@
     useSmartcaseForSearch: true
   welcome:
     showOnStartup: false
+".ansi.text":
+  editor:
+    tabLength: 4
 ".dockerfile.source":
   editor:
     preferredLineLength: 1000
+".hack.html.text":
+  editor:
+    tabLength: 4
+".hackfragment.source":
+  editor:
+    tabLength: 4
+".hg-commit.text":
+  editor:
+    tabLength: 4
 ".ini.source":
   editor:
+    tabLength: 4
+".source.ts":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
+    tabLength: 4
+".source.tsx":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
     tabLength: 4
