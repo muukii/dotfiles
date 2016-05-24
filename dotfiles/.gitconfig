@@ -20,103 +20,109 @@
 [push]
 	default = current
 [alias]
-        alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
 
-		review = !git fetch && git checkout "$1"
+	review = !git fetch && git checkout "$1"
 # status/show (s)
-        s  = status
-        ss = status -s
-        sh = show
+    s  = status
+    ss = status -s
+    sh = show
 # show status after add (a)
-        a  = !git add .  && git status
-        ad = !git add .  && git status
-        au = !git add -u && git status
-        aa = !git add .  && git add -u && git status
-        ap = add -p
+    a  = !git add .  && git status
+    ad = !git add .  && git status
+    au = !git add -u && git status
+    aa = !git add .  && git add -u && git status
+    ap = add -p
 # commit (c)
-        c   = commit
-        ca  = commit -a
-        cm  = commit -m
-        cam = commit --amend
+    c   = commit
+    ca  = commit -a
+    cm  = commit -m
+    cam = commit --amend
 # checkout (ch)
-        ch  = checkout
-        chb = checkout -b
-        chm = checkout master
-        chd = checkout develop
+    ch  = checkout
+    chb = checkout -b
+    chm = checkout master
+    chd = checkout develop
 # branch (b, br)
-        b   = branch
-        br  = branch
-        ba  = branch -a                  # show all branches
-        bra = branch -a                  # show all branches
-        bm  = branch --merged            # already merged branches
-        brm = branch --merged            # already merged branches
-        bn  = branch --no-merged         # not merged branches
-        brn = branch --no-merged         # not merged branches
+    b   = branch
+    br  = branch
+    ba  = branch -a                  # show all branches
+    bra = branch -a                  # show all branches
+    bm  = branch --merged            # already merged branches
+    brm = branch --merged            # already merged branches
+    bn  = branch --no-merged         # not merged branches
+    brn = branch --no-merged         # not merged branches
 # pull/fetch
-        drag = pull --rebase
-        ft   = fetch
+    drag = pull --rebase
+    ft   = fetch
 # push
-        po  = push origin
-        pod = push origin develop
-        pg  = push github
-        pgm = push github master
-        pgd = push github develop
-        pb  = push bitbucket
-        pbm = push bitbucket master
-        pbd = push bitbucket develop
+    po  = push origin
+    pod = push origin develop
+    pg  = push github
+    pgm = push github master
+    pgd = push github develop
+    pb  = push bitbucket
+    pbm = push bitbucket master
+    pbd = push bitbucket develop
 # rebase (rb)
-        rbm = rebase master
-        rbd = rebase develop
-        rbc = rebase --continue
-        rba = rebase --abort
+    rbm = rebase master
+    rbd = rebase develop
+    rbc = rebase --continue
+    rba = rebase --abort
 # revert (rv)
-        rv  = revert
-        rvh = revert HEAD
+    rv  = revert
+    rvh = revert HEAD
 # reset (rs)
-        rs   = reset
-        rsh  = reset --hard
-        rss  = reset --soft
-        rssh = reset --soft HEAD
-        rshh = reset --hard HEAD
+    rs   = reset
+    rsh  = reset --hard
+    rss  = reset --soft
+    rssh = reset --soft HEAD
+    rshh = reset --hard HEAD
 # log (l)
-        l  = log --oneline --stat
-        lp = log --oneline -p
-        ls = log --stat --abbrev-commit -n 1 # display previous log
-        lo = log origin
+    l  = log --oneline --stat
+    lp = log --oneline -p
+    ls = log --stat --abbrev-commit -n 1 # display previous log
+    lo = log origin
 # log tree
-        ln = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset' --name-status
-        lt = log --oneline --since="00:00:01" --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
-        tr = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
-        ta = log --graph --branches --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
-        tao = log origin --graph --branches --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
+    ln = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset' --name-status
+    lt = log --oneline --since="00:00:01" --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
+    tr = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
+    ta = log --graph --branches --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
+    tao = log origin --graph --branches --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
 # diff (d)
-        d  = diff
-        di  = diff
-        dm = diff master
-        dw = diff --color-words
-        d1 = diff HEAD~
-        d2 = diff HEAD~2
-        d3 = diff HEAD~3
+    d  = diff
+    di  = diff
+    dm = diff master
+    dw = diff --color-words
+    d1 = diff HEAD~
+    d2 = diff HEAD~2
+    d3 = diff HEAD~3
 # grep (gr)
-        gr  = grep
-        grn = grep -n
+    gr  = grep
+    grn = grep -n
 # stash (st)
-        st  = stash
-        stl = stash list
-        stp = stash pop
-        sts = stash save
+    st  = stash
+    stl = stash list
+    stp = stash pop
+    sts = stash save
 # cherry-pick (chpk)
-        chpk = cherry-pick
+    chpk = cherry-pick
 # util
-        wip = !git add . && git add -u && git commit -m 'wip :D'
-	bump = !git add . && git add -u && git commit -m 'Bump up'
-        revise = !git add . && git add -u && git commit -m 'Revice'
-        tidy = !git add . && git add -u && git commit -m 'Tidy up'
-        revise = !git add . && git add -u && git commit -m 'Revise'
-	update = !git add . && git add -u && git commit -m 'Update'
-# hub 
-        pr = pull-request
-		ksdiff = !git difftool -y -t Kaleidoscope
+    wip = !git add . && git add -u && git commit -m 'wip :D'
+    bump = !git add . && git add -u && git commit -m 'Bump up'
+    revise = !git add . && git add -u && git commit -m 'Revice'
+    tidy = !git add . && git add -u && git commit -m 'Tidy up'
+    revise = !git add . && git add -u && git commit -m 'Revise'
+    update = !git add . && git add -u && git commit -m 'Update'
+# hub
+    pr = pull-request
+	ksdiff = !git difftool -y -t Kaleidoscope
+# worktree
+	wta = "!f() { git worktree add ../$1 $1; cd ../$1; }; f"
+	wtab = "!f() { git worktree add -b ../$1 $1; cd ../$1; }; f"
+	wtad = "!f() { git worktree add -d ../$1 $1; cd ../$1; }; f"
+    wtl = !git worktree list
+    wtp = !git worktree prune
 # scripts
 	findLargeFiles = !sh ~/dotfiles/scripts/git_find_big.sh
 [filter "media"]
