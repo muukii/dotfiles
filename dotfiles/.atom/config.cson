@@ -1,4 +1,6 @@
 "*":
+  "activate-power-mode":
+    autoToggle: false
   "api-workbench": {}
   "atom-alignment": {}
   "atom-beautify":
@@ -140,6 +142,12 @@
     y: 23
   "remote-edit": {}
   "remote-sync": {}
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
   "sync-settings":
     _analyticsUserId: "651130be-902f-4bfa-a702-1c0820947237"
   term2:

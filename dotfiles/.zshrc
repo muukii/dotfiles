@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 01-May-2016.
+# Last Change: 24-May-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -197,6 +197,6 @@ zle -N zz
 bindkey '^t' zz
 
 ## anyframe
-fpath=($HOME/.zsh/anyframe(N-/) $fpath)
-autoload -Uz anyframe-init
-anyframe-init
+#fpath=($HOME/.zsh/anyframe(N-/) $fpath)
+#autoload -Uz anyframe-init
+#anyframe-init

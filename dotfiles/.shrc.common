@@ -2,7 +2,7 @@
 #
 # File:        .shrc.common
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 28-Apr-2016.
+# Last Change: 24-May-2016.
 
 # alias
 alias ce='cd ../'
@@ -60,7 +60,7 @@ export PATH=$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH
 # go version manager
 if [ -s "$HOME/.gvm/scripts/gvm" ]; then
   source "$HOME/.gvm/scripts/gvm"
-  gvm use go1.6
+  #gvm use go1.6
 fi
 
 # Go
@@ -72,8 +72,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+#export PATH="$HOME/.anyenv/bin:$PATH"
+#eval "$(anyenv init -)"
 
 
 # swiftenv
