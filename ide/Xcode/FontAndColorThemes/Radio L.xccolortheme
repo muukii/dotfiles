@@ -5,23 +5,23 @@
 	<key>DVTConsoleDebuggerInputTextColor</key>
 	<string>0.885881 0.217498 0.301554 1</string>
 	<key>DVTConsoleDebuggerInputTextFont</key>
-	<string>AnonymousPro - 13.0</string>
+	<string>SFMono-Regular - 18.0</string>
 	<key>DVTConsoleDebuggerOutputTextColor</key>
 	<string>0.935976 0.931101 0.931223 1</string>
 	<key>DVTConsoleDebuggerOutputTextFont</key>
-	<string>AnonymousPro - 13.0</string>
+	<string>SFMono-Regular - 18.0</string>
 	<key>DVTConsoleDebuggerPromptTextColor</key>
 	<string>0.885881 0.217498 0.301554 1</string>
 	<key>DVTConsoleDebuggerPromptTextFont</key>
-	<string>AnonymousPro - 13.0</string>
+	<string>SFMono-Regular - 18.0</string>
 	<key>DVTConsoleExectuableInputTextColor</key>
 	<string>0.935976 0.931101 0.931223 1</string>
 	<key>DVTConsoleExectuableInputTextFont</key>
-	<string>AnonymousPro - 13.0</string>
+	<string>SFMono-Regular - 18.0</string>
 	<key>DVTConsoleExectuableOutputTextColor</key>
 	<string>0.935976 0.931101 0.931223 1</string>
 	<key>DVTConsoleExectuableOutputTextFont</key>
-	<string>AnonymousPro - 13.0</string>
+	<string>SFMono-Regular - 18.0</string>
 	<key>DVTConsoleTextBackgroundColor</key>
 	<string>0.0952081 0.105482 0.129263 1</string>
 	<key>DVTConsoleTextInsertionPointColor</key>
@@ -30,10 +30,48 @@
 	<string>1 1 1 0.22</string>
 	<key>DVTDebuggerInstructionPointerColor</key>
 	<string>0.98426 0.708901 0.313895 1</string>
+	<key>DVTMarkupTextBackgroundColor</key>
+	<string>0.167591 0.177043 0.198922 1</string>
+	<key>DVTMarkupTextBorderColor</key>
+	<string>0.234184 0.24288 0.263008 1</string>
+	<key>DVTMarkupTextCodeFont</key>
+	<string>SourceCodePro-Regular - 22.0</string>
+	<key>DVTMarkupTextEmphasisColor</key>
+	<string>0.935976 0.931101 0.931223 0.9</string>
+	<key>DVTMarkupTextEmphasisFont</key>
+	<string>.SFNSDisplay-Regular - 22.0</string>
+	<key>DVTMarkupTextInlineCodeColor</key>
+	<string>0.935976 0.931101 0.931223 0.7</string>
+	<key>DVTMarkupTextLinkColor</key>
+	<string>0.885881 0.217498 0.301554 1</string>
+	<key>DVTMarkupTextLinkFont</key>
+	<string>.SFNSDisplay-Regular - 22.0</string>
+	<key>DVTMarkupTextNormalColor</key>
+	<string>0.935976 0.931101 0.931223 0.9</string>
+	<key>DVTMarkupTextNormalFont</key>
+	<string>.SFNSDisplay-Regular - 22.0</string>
+	<key>DVTMarkupTextOtherHeadingColor</key>
+	<string>0.935976 0.931101 0.931223 0.5</string>
+	<key>DVTMarkupTextOtherHeadingFont</key>
+	<string>.SFNSDisplay-Regular - 30.8</string>
+	<key>DVTMarkupTextPrimaryHeadingColor</key>
+	<string>0.935976 0.931101 0.931223 0.9</string>
+	<key>DVTMarkupTextPrimaryHeadingFont</key>
+	<string>.SFNSDisplay-Regular - 52.8</string>
+	<key>DVTMarkupTextSecondaryHeadingColor</key>
+	<string>0.935976 0.931101 0.931223 0.9</string>
+	<key>DVTMarkupTextSecondaryHeadingFont</key>
+	<string>.SFNSDisplay-Regular - 39.6</string>
+	<key>DVTMarkupTextStrongColor</key>
+	<string>0.935976 0.931101 0.931223 0.9</string>
+	<key>DVTMarkupTextStrongFont</key>
+	<string>.SFNSDisplay-Bold - 22.0</string>
 	<key>DVTSourceTextBackground</key>
 	<string>0.0952081 0.105482 0.129263 1</string>
 	<key>DVTSourceTextBlockDimBackgroundColor</key>
 	<string>0.5 0.5 0.5 1</string>
+	<key>DVTSourceTextCurrentLineHighlightColor</key>
+	<string>0.31256 0.320259 0.338098 0.7875</string>
 	<key>DVTSourceTextInsertionPointColor</key>
 	<string>0.995051 0.995021 0.995038 1</string>
 	<key>DVTSourceTextInvisiblesColor</key>
@@ -43,15 +81,15 @@
 	<key>DVTSourceTextSyntaxColors</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>0.490547 0.440702 0.580645 1</string>
+		<string>0.570968 0.29922 0.508473 1</string>
 		<key>xcode.syntax.character</key>
-		<string>0.88408 0.458814 0.173079 1</string>
+		<string>0.606286 0.721685 0.8667 1</string>
 		<key>xcode.syntax.comment</key>
-		<string>0.361044 0.407665 0.516611 1</string>
+		<string>0.294118 0.298039 0.466667 1</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>0.361044 0.407665 0.516611 1</string>
+		<string>0.606286 0.721685 0.8667 1</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>0.361044 0.407665 0.516611 1</string>
+		<string>0.606286 0.721685 0.8667 1</string>
 		<key>xcode.syntax.identifier.class</key>
 		<string>0.490547 0.440702 0.580645 1</string>
 		<key>xcode.syntax.identifier.class.system</key>
@@ -67,7 +105,7 @@
 		<key>xcode.syntax.identifier.macro</key>
 		<string>0.490547 0.440702 0.580645 1</string>
 		<key>xcode.syntax.identifier.macro.system</key>
-		<string>0.490547 0.440702 0.580645 1</string>
+		<string>0.88408 0.458814 0.173079 1</string>
 		<key>xcode.syntax.identifier.type</key>
 		<string>0.490547 0.440702 0.580645 1</string>
 		<key>xcode.syntax.identifier.type.system</key>
@@ -77,66 +115,66 @@
 		<key>xcode.syntax.identifier.variable.system</key>
 		<string>0.527248 0.764998 0.839709 1</string>
 		<key>xcode.syntax.keyword</key>
-		<string>0.891002 0.260365 0.342343 1</string>
+		<string>0.885881 0.217498 0.301554 1</string>
 		<key>xcode.syntax.number</key>
-		<string>0.88408 0.458814 0.173079 1</string>
+		<string>0.606286 0.721685 0.8667 1</string>
 		<key>xcode.syntax.plain</key>
 		<string>0.935976 0.931101 0.931223 0.9</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>0.88408 0.458814 0.173079 1</string>
+		<string>0.570968 0.29922 0.508473 1</string>
 		<key>xcode.syntax.string</key>
-		<string>0.88408 0.458814 0.173079 1</string>
+		<string>0.606286 0.721685 0.8667 1</string>
 		<key>xcode.syntax.url</key>
-		<string>0.891002 0.260365 0.342343 1</string>
+		<string>0.885881 0.217498 0.301554 1</string>
 	</dict>
 	<key>DVTSourceTextSyntaxFonts</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.character</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.comment</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.class</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.class.system</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.function</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.function.system</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.macro</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.macro.system</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.type</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.type.system</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.variable</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.identifier.variable.system</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.keyword</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.number</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.plain</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.string</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 		<key>xcode.syntax.url</key>
-		<string>mplus-2m-regular - 13.0</string>
+		<string>SourceCodePro-Regular - 24.0</string>
 	</dict>
 </dict>
 </plist>

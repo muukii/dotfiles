@@ -1,0 +1,221 @@
+PODS:
+  - Alamofire (3.3.1)
+  - AppVersionMonitor (1.0.0)
+  - Armchair (0.1.1)
+  - Bolts/Tasks (1.7.0)
+  - BrickRequest (0.4.0):
+    - Alamofire (~> 3.3.0)
+  - Cartography (0.6.0)
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
+  - Colours (5.13.0):
+    - Colours/ObjC (= 5.13.0)
+  - Colours/ObjC (5.13.0)
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
+  - FileBrowser (0.1.4)
+  - FileKit (2.0.0)
+  - FloatingActionSheetController (1.1.0)
+  - FontBlaster (2.1.2)
+  - Former (1.3.0)
+  - GCDKit (1.2.4)
+  - Google-Mobile-Ads-SDK (7.8.1)
+  - GoogleAnalytics (3.14.0)
+  - Hue (1.1)
+  - Instantiatable (0.1.0)
+  - JEToolkit (3.0.5):
+    - JEToolkit/JEDebugging (= 3.0.5)
+    - JEToolkit/JEOrderedDictionary (= 3.0.5)
+    - JEToolkit/JESettings (= 3.0.5)
+    - JEToolkit/JEToolkit (= 3.0.5)
+    - JEToolkit/JEWeakCache (= 3.0.5)
+  - JEToolkit/JEDebugging (3.0.5):
+    - JEToolkit/JEToolkit
+  - JEToolkit/JEOrderedDictionary (3.0.5)
+  - JEToolkit/JESettings (3.0.5)
+  - JEToolkit/JEToolkit (3.0.5)
+  - JEToolkit/JEWeakCache (3.0.5)
+  - KMPlaceholderTextView (1.2.0)
+  - LightRoom (0.9.9):
+    - SwiftyJSON (~> 2.3)
+  - MBProgressHUD (0.9.2)
+  - Parse (1.13.0):
+    - Bolts/Tasks (~> 1.6)
+  - PhotosProvider (0.2.0):
+    - GCDKit (~> 1.2.1)
+  - Presenter (0.1.0)
+  - Realm (0.100.0):
+    - Realm/Headers (= 0.100.0)
+  - Realm-EasyBackground (0.4.0):
+    - RealmSwift (~> 0.100.0)
+  - Realm/Headers (0.100.0)
+  - RealmDefaults (0.4.0):
+    - RealmSwift (~> 0.100.0)
+  - RealmSwift (0.100.0):
+    - Realm (= 0.100.0)
+  - RESTRequest (0.4.0):
+    - BrickRequest (~> 0.4.0)
+    - RxSwift (~> 2.3.1)
+    - SwiftyJSON (~> 2.3.1)
+  - Reveal-iOS-SDK (1.6.2)
+  - RxCocoa (2.3.1):
+    - RxSwift (~> 2.3.1)
+  - RxGesture (0.1.6):
+    - RxCocoa (~> 2.3.1)
+  - RxOptional (2.0.0):
+    - RxCocoa (~> 2.0)
+    - RxSwift (~> 2.0)
+  - RxRealm (0.1.4):
+    - RealmSwift (~> 0.100)
+    - RxSwift
+  - RxSwift (2.3.1)
+  - RxUnsplashSource (0.1.1):
+    - RxSwift (~> 2.0)
+  - STRegex (0.3.1)
+  - SVGKit (2.0.1):
+    - CocoaLumberjack (~> 2.x)
+  - SwiftyBeaver (0.5.4)
+  - SwiftyJSON (2.3.2)
+  - TextAttributes (0.3.1)
+  - TextAttributesUtil (0.1.1):
+    - TextAttributes (~> 0.3)
+  - Then (1.0.2)
+  - Unwrap (0.1.0)
+  - Warehouse (0.1.1)
+  - WESlider (0.0.5)
+  - zipzap (8.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AppVersionMonitor
+  - Armchair (~> 0.1.1)
+  - Cartography
+  - Colours
+  - Crashlytics
+  - Fabric
+  - FileBrowser
+  - FileKit (~> 2.0.0)
+  - FloatingActionSheetController
+  - FontBlaster
+  - Former
+  - GCDKit
+  - Google-Mobile-Ads-SDK
+  - GoogleAnalytics
+  - Hue
+  - Instantiatable (from `./DevPods/Instantiatable/`)
+  - JEToolkit (~> 3.0.0)
+  - KMPlaceholderTextView
+  - LightRoom (from `./DevPods/LightRoom/`)
+  - MBProgressHUD
+  - Parse
+  - PhotosProvider (~> 0.2.0)
+  - Presenter (from `./DevPods/Presenter`)
+  - Realm-EasyBackground
+  - RealmDefaults
+  - RealmSwift (~> 0.100.0)
+  - RESTRequest (from `./DevPods/RESTRequest/`)
+  - Reveal-iOS-SDK
+  - RxCocoa
+  - RxGesture
+  - RxOptional
+  - RxRealm
+  - RxSwift
+  - RxUnsplashSource
+  - STRegex
+  - SVGKit (from `https://github.com/SVGKit/SVGKit.git`, branch `2.x`)
+  - SwiftyBeaver
+  - SwiftyJSON
+  - TextAttributes
+  - TextAttributesUtil
+  - Then (~> 1.0)
+  - Unwrap
+  - Warehouse (from `https://github.com/muukii/Warehouse`, tag `0.3.0`)
+  - WESlider
+  - zipzap
+
+EXTERNAL SOURCES:
+  Instantiatable:
+    :path: "./DevPods/Instantiatable/"
+  LightRoom:
+    :path: "./DevPods/LightRoom/"
+  Presenter:
+    :path: "./DevPods/Presenter"
+  RESTRequest:
+    :path: "./DevPods/RESTRequest/"
+  SVGKit:
+    :branch: 2.x
+    :git: https://github.com/SVGKit/SVGKit.git
+  Warehouse:
+    :git: https://github.com/muukii/Warehouse
+    :tag: 0.3.0
+
+CHECKOUT OPTIONS:
+  SVGKit:
+    :commit: 6d50d975fc155273f215ebc2e6479d48f1ca6877
+    :git: https://github.com/SVGKit/SVGKit.git
+  Warehouse:
+    :git: https://github.com/muukii/Warehouse
+    :tag: 0.3.0
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  AppVersionMonitor: 8f071937ef3437fc96a1bfa533c77c8f531c170a
+  Armchair: 276f0dadba704b562870613301bdf7b595a29315
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  BrickRequest: 11664a50ebf0af77ff87ad18a9e9ea4fc09bf900
+  Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  Colours: f24220c38f13deac88612667e9b4a7fb96b871d4
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  FileBrowser: 4e48c118606571cf59fd1d20930ac41887c026d0
+  FileKit: fd360f82f62a1f70dd2ccdbe0950d3a6d1e25d1d
+  FloatingActionSheetController: 229e0cfe96d691b97c91900f9b6d54ece6bf93bd
+  FontBlaster: 95ebf29a025dbeda4530300099c6f533e805682c
+  Former: 7380ef3b9bdb3bf43d9f0fe99e369987d3068705
+  GCDKit: 998a697be1346fb2e92d4b867a83e90a94decc56
+  Google-Mobile-Ads-SDK: 3c2a6656117989469bfe7645640aa1de024a4c6c
+  GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
+  Hue: ed6781be844b58b2a38150cfd4bf24c33449faf8
+  Instantiatable: 2576590873b1d0b57283a8f3e62e58e2ffc9cbb3
+  JEToolkit: 6205fb5fbffabbc35afee10032a9f1b53dceabec
+  KMPlaceholderTextView: cae8ee889bd38d20587eee6b2623b8218f31b8f5
+  LightRoom: a5e4c67dbc5172c7a1504377ef89a3bc98a6f3c3
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
+  PhotosProvider: 38acd64857a563b0f5718263427fda6b438f4eea
+  Presenter: 63e0942f0cfa35a367877b56ccf41bfc833d6324
+  Realm: b13b548e712d28a66678970c45cd245ebb94ba3b
+  Realm-EasyBackground: 5f35079ff0da55676b7a50b1d4af16b8bc54ab0a
+  RealmDefaults: 0b2b1a8680ce2febdf3d40d2a03e28c8aa2beb90
+  RealmSwift: 1bb0ba2ceaa06b65d740b4f91bfa06e3fd1b805c
+  RESTRequest: 03a7f42994f842ce0cfebb6f235bb4347d00c1b9
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  RxCocoa: a2baaf3462b989559a51dce59d78fbebb8fe0afa
+  RxGesture: da19da595b5fcfb27488c878475e77cf085e35aa
+  RxOptional: b77fb47a0190213cf8a37c7a2b7fda28160b4563
+  RxRealm: aee2585d973eb00554ca1691e12cfa8248c4616f
+  RxSwift: 829b2843e9eddc77a02cb3f5117f0d55f8f646f1
+  RxUnsplashSource: 3b5b7787971c2cf741ffcaf7ec45c7e336a4b2ab
+  STRegex: 4c27ffabad2c8b603f050d28e6c794eb72a13608
+  SVGKit: 2afbeaf2c2be4615476951284750c3ddb790d0c7
+  SwiftyBeaver: 1f4ddee4a4fc266b9da99ebbd379df723d5c4241
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TextAttributes: b43233c6356a72f1c1e483d5bda694535432a4be
+  TextAttributesUtil: 7ecad02c7cdf68f57f7e98f3578442fcc833e97d
+  Then: ad8e9b430e7bbb78da49457b4acc576947b2b3c1
+  Unwrap: f0f61c3790864a5f5fbecb923f858be63b9c35e3
+  Warehouse: d72709315402214a0a7563b12625b3e1f0ee4d7c
+  WESlider: f25698fc6d1e00f520033e92ab92b22f9937aee6
+  zipzap: 940162d9c9c60472c2eab341385e4214da0fdf1c
+
+PODFILE CHECKSUM: 8af707fc210e717dbd76342ac660a5763e845149
+
+COCOAPODS: 1.0.0

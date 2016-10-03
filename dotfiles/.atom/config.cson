@@ -77,11 +77,11 @@
         "BUCK"
       ]
     disabledPackages: [
-      "minimap"
       "emmet"
       "language-ruby-on-rails"
+      "linter-sourcekitten-syntax"
+      "remote-sync"
     ]
-    followSymlinks: true
     themes: [
       "spacegray-dark-ui"
       "fruits-syntax"
@@ -89,10 +89,9 @@
   editor:
     backUpBeforeSaving: true
     fontFamily: "SourceCodePro-Regular"
-    fontSize: 12
+    fontSize: 13
     invisibles:
       tab: "▸"
-    scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -122,6 +121,8 @@
     useGlobalEslint: true
   "linter-rubocop": {}
   "linter-swiftc": {}
+  minimap:
+    absoluteMode: true
   notifications: {}
   nuclide:
     installRecommendedPackages: true
@@ -131,6 +132,8 @@
   pigments: {}
   "recent-files":
     updated: false
+  "regex-railroad-diagram":
+    enabled: false
   "remember-session":
     height: 1373
     path: "/Users/Muukii/Develop/iOS/Eureka/couples-ios-tmp"
@@ -150,6 +153,9 @@
     syncHorizontalScroll: true
   "sync-settings":
     _analyticsUserId: "651130be-902f-4bfa-a702-1c0820947237"
+    _lastBackupHash: "af9facf7570e50a902fcec8be0a8b2e27d07c7a4"
+    gistId: "4404cbd618abe0d5b158ff954e7a712c"
+    personalAccessToken: "863f53225b8e4512af176877d0ab89a078e966a3"
   term2:
     colors: {}
   "tool-bar":

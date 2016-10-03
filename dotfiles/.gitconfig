@@ -1,6 +1,7 @@
 [user]
 	name = muukii
 	email = m@muukii.me
+	signingkey = 5F608044
 [merge]
     tool = vimdiff
 	ff = false
@@ -108,11 +109,10 @@
 # cherry-pick (chpk)
     chpk = cherry-pick
 # util
-    wip = !git add . && git add -u && git commit -m 'wip :D'
-    bump = !git add . && git add -u && git commit -m 'Bump up'
-    revise = !git add . && git add -u && git commit -m 'Revice'
-    tidy = !git add . && git add -u && git commit -m 'Tidy up'
-    revise = !git add . && git add -u && git commit -m 'Revise'
+	wip = !git add . && git add -u && git commit -m '🤔WIP [ci skip]'
+    oops = !git add . && git add -u && git commit -m '🤐Oops '
+	revise = !git add . && git add -u && git commit -m '🤓Revice [ci skip]'
+	tidy = !git add . && git add -u && git commit -m '🙄Tidy up'    
     update = !git add . && git add -u && git commit -m 'Update'
 # hub
     pr = pull-request
@@ -149,3 +149,9 @@
 	required = true
 [mergetool]
 	keepBackup = false
+[commit]
+#	gpgsign = false
+[gpg]
+#   program = gpg
+[commit]
+	gpgsign = false

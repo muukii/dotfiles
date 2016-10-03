@@ -21,6 +21,10 @@ Plugin 'toyamarinyon/vim-swift'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'tomasr/molokai'
 Plugin 'fatih/vim-go'
+Plugin 'cfdrake/vim-carthage'
+Plugin 'mitsuse/autocomplete-swift'
+Plugin 'Shougo/NeoComplete'
+Plugin 'Keithbsmiley/swift.vim'
 
 filetype plugin indent on
 
@@ -33,12 +37,15 @@ colorscheme monokai
 
 set noundofile
 set nobackup
+set wrap
 set noswapfile
 set statusline=2
 set tabstop=4
 set autoindent
 set expandtab
 set shiftwidth=4
+set title
+set mouse=a
 set number
 set numberwidth=5
 set encoding=utf-8
@@ -73,9 +80,6 @@ let g:ctrlp_map = '<c-p>'
 
 " Syntax
 au BufRead,BufNewFile *.md set filetype=markdown
-
-" Geeknotee
-let g:GeeknoteFormat="markdown"
 
 let g:molokai_original = 1
 let g:rehash256 = 1

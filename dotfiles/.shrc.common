@@ -2,7 +2,9 @@
 #
 # File:        .shrc.common
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 24-May-2016.
+# Last Change: 25-Jul-2016.
+
+export LANG=en_US.UTF-8
 
 # alias
 alias ce='cd ../'

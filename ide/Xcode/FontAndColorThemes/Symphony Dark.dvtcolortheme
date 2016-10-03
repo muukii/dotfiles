@@ -81,25 +81,25 @@
 		<key>xcode.syntax.attribute</key>
 		<string>0.491155 0.4421 0.580534 1</string>
 		<key>xcode.syntax.character</key>
-		<string>0.941176 0.776471 0.454902 1</string>
+		<string>1 0.45098 0.270588 1</string>
 		<key>xcode.syntax.comment</key>
-		<string>0.361044 0.407665 0.516611 1</string>
+		<string>0.337255 0.372549 0.490196 1</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>0.361044 0.407665 0.516611 1</string>
+		<string>0.337255 0.372549 0.490196 1</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>0.361044 0.407665 0.516611 1</string>
+		<string>0.337255 0.372549 0.490196 1</string>
 		<key>xcode.syntax.identifier.class</key>
 		<string>0.490547 0.440702 0.580645 1</string>
 		<key>xcode.syntax.identifier.class.system</key>
-		<string>0.455085 0.819608 0.929412 1</string>
+		<string>0.482353 0.803922 0.909804 1</string>
 		<key>xcode.syntax.identifier.constant</key>
 		<string>0.490547 0.440702 0.580645 1</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>0.455085 0.819608 0.929412 1</string>
+		<string>0.482353 0.803922 0.909804 1</string>
 		<key>xcode.syntax.identifier.function</key>
 		<string>0.490547 0.440702 0.580645 1</string>
 		<key>xcode.syntax.identifier.function.system</key>
-		<string>0.455085 0.819608 0.929412 1</string>
+		<string>0.482353 0.803922 0.909804 1</string>
 		<key>xcode.syntax.identifier.macro</key>
 		<string>0.490547 0.440702 0.580645 1</string>
 		<key>xcode.syntax.identifier.macro.system</key>
@@ -107,15 +107,15 @@
 		<key>xcode.syntax.identifier.type</key>
 		<string>0.490547 0.440702 0.580645 1</string>
 		<key>xcode.syntax.identifier.type.system</key>
-		<string>0.455085 0.819608 0.929412 1</string>
+		<string>0.482353 0.803922 0.909804 1</string>
 		<key>xcode.syntax.identifier.variable</key>
 		<string>0.490547 0.440702 0.580645 1</string>
 		<key>xcode.syntax.identifier.variable.system</key>
-		<string>0.455085 0.819608 0.929412 1</string>
+		<string>0.482353 0.803922 0.909804 1</string>
 		<key>xcode.syntax.keyword</key>
 		<string>0.854199 0.155494 0.265959 1</string>
 		<key>xcode.syntax.number</key>
-		<string>0.941176 0.776471 0.454902 1</string>
+		<string>1 0.45098 0.270588 1</string>
 		<key>xcode.syntax.plain</key>
 		<string>0.935976 0.931101 0.931223 0.9</string>
 		<key>xcode.syntax.preprocessor</key>
@@ -123,56 +123,56 @@
 		<key>xcode.syntax.string</key>
 		<string>1 0.45098 0.270588 1</string>
 		<key>xcode.syntax.url</key>
-		<string>0.85231 0.155661 0.265689 1</string>
+		<string>0.85098 0.156863 0.266667 1</string>
 	</dict>
 	<key>DVTSourceTextSyntaxFonts</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.character</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.comment</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.class</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.class.system</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.function</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.function.system</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.macro</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.macro.system</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.type</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.type.system</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.variable</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.variable.system</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.keyword</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.number</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.plain</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.string</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 		<key>xcode.syntax.url</key>
-		<string>Menlo-Regular - 12.0</string>
+		<string>CourierPrimeCode-Regular - 12.0</string>
 	</dict>
 </dict>
 </plist>

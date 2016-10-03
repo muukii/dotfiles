@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 24-May-2016.
+# Last Change: 18-Sep-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -59,8 +59,9 @@ setopt prompt_cr
 # visible CR when output CR by prompt_cr
 setopt prompt_sp
 
-DEFAULT=$'\U276F'
-ERROR=$'\U2716'
+DEFAULT='❯'
+SUCCESS='❯'
+ERROR='✕'
 
 APPEND=''
 if [ -n "${DOCKER_CONTAINER}" ]; then
@@ -70,7 +71,7 @@ fi
 PS1="%{[0m%}
 %{[37m%}\$(parse_git_status)%{[0m%}
 %{[31m%}${APPEND}[32m%}${DEFAULT} %n ${DEFAULT} %m ${DEFAULT} %{[33m%}%~%{[0m%}
-%(?|%{[36m%}${DEFAULT}|%{[31m%}${ERROR})%{[35m%}\$(parse_git_branch) %{[0m%}"
+%(?|%{[36m%}${SUCCESS}|%{[31m%}${ERROR})%{[35m%}\$(parse_git_branch) %{[0m%}"
 
 # PROMPT2
 PS2="%_> "
@@ -174,6 +175,12 @@ alias server='python -m SimpleHTTPServer'
 
 ## processing
 alias processing='processing-java'
+
+# Check $fpath
+echo $fpath
+
+# Create a symbolic link
+ln -s /Library/Frameworks/CarthageKit.framework/Versions/A/Scripts/carthage-zsh-completion /path/to/fpath/directory/_carthage
 
 ## peco
 function ch() {

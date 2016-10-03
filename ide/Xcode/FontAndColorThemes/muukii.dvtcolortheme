@@ -30,6 +30,42 @@
 	<string>0.397 0.397 0.302 1</string>
 	<key>DVTDebuggerInstructionPointerColor</key>
 	<string>0.98426 0.708901 0.313895 1</string>
+	<key>DVTMarkupTextBackgroundColor</key>
+	<string>0.183092 0.192721 0.221266 1</string>
+	<key>DVTMarkupTextBorderColor</key>
+	<string>0.248445 0.257303 0.283565 1</string>
+	<key>DVTMarkupTextCodeFont</key>
+	<string>SourceCodePro-Regular - 11.0</string>
+	<key>DVTMarkupTextEmphasisColor</key>
+	<string>0.859769 0.859743 0.859758 1</string>
+	<key>DVTMarkupTextEmphasisFont</key>
+	<string>.AppleSystemUIFontItalic - 11.0</string>
+	<key>DVTMarkupTextInlineCodeColor</key>
+	<string>0.859769 0.859743 0.859758 0.7</string>
+	<key>DVTMarkupTextLinkColor</key>
+	<string>0.971874 0.134276 0.38068 1</string>
+	<key>DVTMarkupTextLinkFont</key>
+	<string>.AppleSystemUIFont - 11.0</string>
+	<key>DVTMarkupTextNormalColor</key>
+	<string>0.859769 0.859743 0.859758 1</string>
+	<key>DVTMarkupTextNormalFont</key>
+	<string>.AppleSystemUIFont - 11.0</string>
+	<key>DVTMarkupTextOtherHeadingColor</key>
+	<string>0.859769 0.859743 0.859758 0.5</string>
+	<key>DVTMarkupTextOtherHeadingFont</key>
+	<string>.AppleSystemUIFont - 15.4</string>
+	<key>DVTMarkupTextPrimaryHeadingColor</key>
+	<string>0.859769 0.859743 0.859758 1</string>
+	<key>DVTMarkupTextPrimaryHeadingFont</key>
+	<string>.AppleSystemUIFont - 26.4</string>
+	<key>DVTMarkupTextSecondaryHeadingColor</key>
+	<string>0.859769 0.859743 0.859758 1</string>
+	<key>DVTMarkupTextSecondaryHeadingFont</key>
+	<string>.AppleSystemUIFont - 19.8</string>
+	<key>DVTMarkupTextStrongColor</key>
+	<string>0.859769 0.859743 0.859758 1</string>
+	<key>DVTMarkupTextStrongFont</key>
+	<string>.AppleSystemUIFontBold - 11.0</string>
 	<key>DVTSourceTextBackground</key>
 	<string>0.112057 0.122523 0.15355 1</string>
 	<key>DVTSourceTextBlockDimBackgroundColor</key>
@@ -53,7 +89,7 @@
 		<key>xcode.syntax.comment.doc.keyword</key>
 		<string>0.98426 0.708901 0.313895 1</string>
 		<key>xcode.syntax.identifier.class</key>
-		<string>0.973248 0.306011 0.338967 1</string>
+		<string>0.972549 0.305882 0.337255 1</string>
 		<key>xcode.syntax.identifier.class.system</key>
 		<string>0.421491 0.926801 0.994179 1</string>
 		<key>xcode.syntax.identifier.constant</key>
