@@ -1,0 +1,1 @@
+/Users/muukii/.config/fisherman/getopts/getopts.fish

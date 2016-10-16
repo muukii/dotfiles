@@ -1,0 +1,1 @@
+/Users/muukii/.config/fisherman/segment/segment_right.fish

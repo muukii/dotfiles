@@ -25,6 +25,7 @@ Plugin 'cfdrake/vim-carthage'
 Plugin 'mitsuse/autocomplete-swift'
 Plugin 'Shougo/NeoComplete'
 Plugin 'Keithbsmiley/swift.vim'
+Plugin 'vim-scripts/fish.vim'
 
 filetype plugin indent on
 

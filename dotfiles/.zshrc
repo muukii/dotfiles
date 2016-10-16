@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 18-Sep-2016.
+# Last Change: 08-Oct-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -194,7 +194,7 @@ function zz() {
   fi
   local res=$(z | sort -rn | cut -c 12- | peco --layout bottom-up --prompt "Dir")
   if [ -n "$res" ]; then
-    BUFFER+="cd $res"
+    BUFFER+="cd '$res'"
     zle accept-line
   else
     return 1

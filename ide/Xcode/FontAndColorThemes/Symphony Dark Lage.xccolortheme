@@ -83,7 +83,7 @@
 		<key>xcode.syntax.attribute</key>
 		<string>0.340023 0.435851 0.696437 1</string>
 		<key>xcode.syntax.character</key>
-		<string>1 0.45098 0.270588 1</string>
+		<string>0.953149 0.379342 0.17916 1</string>
 		<key>xcode.syntax.comment</key>
 		<string>0.264003 0.303329 0.453447 1</string>
 		<key>xcode.syntax.comment.doc</key>
@@ -117,64 +117,64 @@
 		<key>xcode.syntax.keyword</key>
 		<string>0.862745 0.192157 0.32549 1</string>
 		<key>xcode.syntax.number</key>
-		<string>1 0.45098 0.270588 1</string>
+		<string>0.953149 0.379342 0.17916 1</string>
 		<key>xcode.syntax.plain</key>
 		<string>0.935976 0.931101 0.931223 0.9</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>1 0.45098 0.270588 1</string>
+		<string>0.953149 0.379342 0.17916 1</string>
 		<key>xcode.syntax.string</key>
-		<string>1 0.45098 0.270588 1</string>
+		<string>0.953149 0.379342 0.17916 1</string>
 		<key>xcode.syntax.url</key>
 		<string>0.862745 0.192157 0.32549 1</string>
 	</dict>
 	<key>DVTSourceTextSyntaxFonts</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.character</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.comment</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.class</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.class.system</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>SourceCodePro-It - 12.0</string>
+		<string>SourceCodePro-It - 16.0</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>SourceCodePro-It - 12.0</string>
+		<string>SourceCodePro-It - 16.0</string>
 		<key>xcode.syntax.identifier.function</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.function.system</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.macro</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.macro.system</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.type</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.type.system</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.variable</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.identifier.variable.system</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.keyword</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.number</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.plain</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.string</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 		<key>xcode.syntax.url</key>
-		<string>SourceCodePro-Regular - 12.0</string>
+		<string>SourceCodePro-Regular - 16.0</string>
 	</dict>
 </dict>
 </plist>

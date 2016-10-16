@@ -1,0 +1,1 @@
+/Users/muukii/.config/fisherman/get/functions/get.fish

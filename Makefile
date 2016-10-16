@@ -30,6 +30,9 @@ zsh:
 	sudo sh -c 'echo $(which zsh) >> /etc/shells'
 	chsh -s /usr/local/bin/zsh
 
+fish_config:
+	ln -sf $(PWD)/fish $(HOME)/.config/
+
 direnv:
 	brew install direnv
 
