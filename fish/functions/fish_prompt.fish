@@ -6,35 +6,44 @@ function fish_prompt
 	end
 
 	# set_color-detection
-	git status -s 2> /dev/null
+	fish -c "git status -s 2> /dev/null"
 
-	segment 111 white hello
+	set pwd (prompt_pwd)
+	set branch (git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/' | sed -e 's/ //')
+	set hostname (hostname)
+
+	segment FFF FFB254 " $branch "
+	segment FFF 50B9D3 " $pwd "
+	segment FFF 686868 " $hostname "
+	segment FFF 414141 " $USER "
 	segment_close
 
-	echo -n "$USER ❯ $__fish_prompt_hostname ❯ "
+	# echo -n "$USER ❯ $__fish_prompt_hostname ❯ "
 
 	# PWD
-    set_color $fish_color_cwd
-    echo -n (prompt_pwd)
-    set_color normal
+    #set_color $fish_color_cwd
+    #echo -n (prompt_pwd)
+    # set_color normal
 
 	echo 
 
-	set branch (git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/' | sed -e 's/ //')
 
-	set_color yellow	
-	echo -n "$branch "
+	#set_color yellow	
+	#echo -n "$branch "
 
-	segment 111 white "$branch"
-	segment_close
 
-    if not test $last_status -eq 0
-    	set_color $fish_color_error
-		echo -n "× "
+	if not test $last_status -eq 0
+#   	set_color $fish_color_error
+#   	echo -n "× "
+		segment FFF ED636E " ✖︎ "	
 	else
-    	set_color cyan 
-    	echo -n "❯ "
-    end
+#   	set_color cyan 
+#   	echo -n "❯ "
+#		segment FFF 3E6A95 " ◉ "
+		segment FFF 3E6A95 ' $ '
+	end
+
+	segment_close
 
     set_color normal
 end

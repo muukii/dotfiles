@@ -82,6 +82,7 @@
       "linter-sourcekitten-syntax"
       "remote-sync"
     ]
+    telemetryConsent: "limited"
     themes: [
       "spacegray-dark-ui"
       "fruits-syntax"

@@ -1,4 +1,6 @@
 
+set -g -x EDITOR vim
+
 # gi
 function gi
   curl -L -s https://www.gitignore.io/api/$argv
