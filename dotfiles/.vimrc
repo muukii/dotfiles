@@ -7,25 +7,26 @@ call vundle#rc()
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
-Plugin 'https://github.com/cocopon/iceberg.vim.git'
-Plugin 'sophacles/vim-processing'
-Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'thinca/vim-quickrun'
 Plugin 'superbrothers/vim-quickrun-markdown-gfm'
 Plugin 'kannokanno/previm'
 Plugin 'tyru/open-browser.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'neilagabriel/vim-geeknote'
 Plugin 'toyamarinyon/vim-swift'
 Plugin 'jonathanfilip/vim-lucius'
-Plugin 'tomasr/molokai'
 Plugin 'fatih/vim-go'
 Plugin 'cfdrake/vim-carthage'
 Plugin 'mitsuse/autocomplete-swift'
 Plugin 'Shougo/NeoComplete'
 Plugin 'Keithbsmiley/swift.vim'
 Plugin 'vim-scripts/fish.vim'
+
+" Theme
+Plugin 'djjcast/mirodark'
+Plugin 'tomasr/molokai'
+Plugin 'chriskempson/vim-tomorrow-theme'
+
 
 filetype plugin indent on
 
@@ -34,7 +35,7 @@ filetype indent on
 
 syntax enable
 
-colorscheme monokai 
+colorscheme molokai 
 
 set noundofile
 set nobackup
@@ -55,8 +56,6 @@ set fileformats=unix,dos,mac
 set cursorline
 set autoread
 set list
-set noexpandtab
-set nosmartindent
 set shiftround
 set clipboard+=unnamed
 set listchars=eol:¬,tab:▸\ 
@@ -96,3 +95,4 @@ let g:quickrun_config = {
 " Golang
 exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 let g:go_fmt_autosave = 1
+

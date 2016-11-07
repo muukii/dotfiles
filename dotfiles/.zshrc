@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 08-Oct-2016.
+# Last Change: 04-Nov-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -170,6 +170,9 @@ alias dl='docker ps -l -q'
 alias da='docker ps -a'
 alias dat='docker attach `dl`'
 
+#Hub
+eval "$(hub alias -s)"
+
 ## server
 alias server='python -m SimpleHTTPServer'
 
@@ -201,7 +204,14 @@ function zz() {
   fi
 }
 zle -N zz
-bindkey '^t' zz
+bindkey '^z' zz
+
+function incremental_mdfind() {
+    cd "$(mdfind -onlyin ./ 'kMDItemContentType == "public.folder" || kMDItemFSNodeCount > 0' | sort -r | peco --layout bottom-up --prompt "Dir mdfind" --query="$*")"
+    zle accept-line
+}
+zle -N incremental_mdfind
+bindkey '^t' incremental_mdfind
 
 ## anyframe
 #fpath=($HOME/.zsh/anyframe(N-/) $fpath)

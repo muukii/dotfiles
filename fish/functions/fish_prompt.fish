@@ -1,49 +1,32 @@
-set -g fish_prompt_pwd_dir_length 0
+set -g fish_prompt_pwd_dir_length 5 
 function fish_prompt
 	set -l last_status $status
-	if not set -q __fish_prompt_hostname
-		set -g __fish_prompt_hostname (set_color 6ff)(hostname|cut -d . -f 1)(set_color normal)
-	end
 
-	# set_color-detection
-	fish -c "git status -s 2> /dev/null"
+    set -l git_status (git status -s 2> /dev/null)
+	printf "%s\n" $git_status 
 
 	set pwd (prompt_pwd)
-	set branch (git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/' | sed -e 's/ //')
-	set hostname (hostname)
+	set branch (git rev-parse --abbrev-ref HEAD 2> /dev/null)
+    set hostname (hostname)
+    set date (date "+$c2%H$c0:$c2%M$c0:$c2%S")
 
-	segment FFF FFB254 " $branch "
+    if test "$branch" != ""
+        segment FFF CC6A80 " $branch "
+    end
 	segment FFF 50B9D3 " $pwd "
-	segment FFF 686868 " $hostname "
-	segment FFF 414141 " $USER "
+	segment FFF 404244 " $hostname "
+	segment FFF 353739 " $USER "
+    segment FFF 303234 " $date "
 	segment_close
-
-	# echo -n "$USER ❯ $__fish_prompt_hostname ❯ "
-
-	# PWD
-    #set_color $fish_color_cwd
-    #echo -n (prompt_pwd)
-    # set_color normal
 
 	echo 
 
-
-	#set_color yellow	
-	#echo -n "$branch "
-
-
 	if not test $last_status -eq 0
-#   	set_color $fish_color_error
-#   	echo -n "× "
 		segment FFF ED636E " ✖︎ "	
 	else
-#   	set_color cyan 
-#   	echo -n "❯ "
-#		segment FFF 3E6A95 " ◉ "
 		segment FFF 3E6A95 ' $ '
 	end
 
 	segment_close
-
-    set_color normal
 end
+

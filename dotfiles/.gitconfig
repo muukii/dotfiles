@@ -20,8 +20,9 @@
 	autosetuprebase = always
 [push]
 	default = current
-[alias]
+[alias]    
     alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+    pr = hub pull-request -F ./.github/PULL_REQUEST_TEMPLATE.md
 
 	review = !git fetch && git checkout "$1"
 # status/show (s)

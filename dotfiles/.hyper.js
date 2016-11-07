@@ -4,7 +4,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: '"SourceCodePro-Bold", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: '"SourceCodePro-Medium", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(249, 227, 29, 0.75)',
@@ -54,7 +54,7 @@ module.exports = {
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
-    shell: '/usr/local/bin/fish',
+    shell: '/usr/local/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used

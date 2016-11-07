@@ -45,23 +45,23 @@
 	<key>DVTMarkupTextLinkColor</key>
 	<string>0.891002 0.260365 0.342343 1</string>
 	<key>DVTMarkupTextLinkFont</key>
-	<string>.SFNSText-Regular - 12.0</string>
+	<string>.SFNSText - 12.0</string>
 	<key>DVTMarkupTextNormalColor</key>
 	<string>0.935976 0.931101 0.931223 0.9</string>
 	<key>DVTMarkupTextNormalFont</key>
-	<string>.SFNSText-Regular - 12.0</string>
+	<string>.SFNSText - 12.0</string>
 	<key>DVTMarkupTextOtherHeadingColor</key>
 	<string>0.935976 0.931101 0.931223 0.5</string>
 	<key>DVTMarkupTextOtherHeadingFont</key>
-	<string>.SFNSText-Regular - 16.8</string>
+	<string>.SFNSText - 16.8</string>
 	<key>DVTMarkupTextPrimaryHeadingColor</key>
 	<string>0.935976 0.931101 0.931223 0.9</string>
 	<key>DVTMarkupTextPrimaryHeadingFont</key>
-	<string>.SFNSDisplay-Regular - 28.8</string>
+	<string>.SFNSDisplay - 28.8</string>
 	<key>DVTMarkupTextSecondaryHeadingColor</key>
 	<string>0.935976 0.931101 0.931223 0.9</string>
 	<key>DVTMarkupTextSecondaryHeadingFont</key>
-	<string>.SFNSDisplay-Regular - 21.6</string>
+	<string>.SFNSDisplay - 21.6</string>
 	<key>DVTMarkupTextStrongColor</key>
 	<string>0.935976 0.931101 0.931223 0.9</string>
 	<key>DVTMarkupTextStrongFont</key>
