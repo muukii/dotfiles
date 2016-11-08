@@ -2,7 +2,7 @@
 #
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 04-Nov-2016.
+# Last Change: 08-Nov-2016.
 
 # source common shell run command
 source ~/.shrc.common
@@ -175,6 +175,9 @@ eval "$(hub alias -s)"
 
 ## server
 alias server='python -m SimpleHTTPServer'
+
+## bear
+alias bear='~/dotfiles/scripts/bear.swift'
 
 ## processing
 alias processing='processing-java'
