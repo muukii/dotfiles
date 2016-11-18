@@ -185,9 +185,6 @@ alias processing='processing-java'
 # Check $fpath
 echo $fpath
 
-# Create a symbolic link
-ln -s /Library/Frameworks/CarthageKit.framework/Versions/A/Scripts/carthage-zsh-completion /path/to/fpath/directory/_carthage
-
 ## peco
 function ch() {
 	git ch `git ba | peco --layout bottom-up --prompt "Git Branch" | sed 's|remotes/origin/||'`
@@ -216,7 +213,19 @@ function incremental_mdfind() {
 zle -N incremental_mdfind
 bindkey '^t' incremental_mdfind
 
+fuction peco-g-add() {
+    local target="$(git status -s | peco --layout bottom-up --prompt 'Add' | awk '{print $2}')"
+    if [ -n "$target" ]; then
+        git add $target
+    fi
+}
+
+zle -N peco-g-add
+bindkey '^g' peco-g-add 
+
 ## anyframe
 #fpath=($HOME/.zsh/anyframe(N-/) $fpath)
 #autoload -Uz anyframe-init
 #anyframe-init
+#
+#

@@ -110,11 +110,8 @@
 # cherry-pick (chpk)
     chpk = cherry-pick
 # util
-	wip = !git add . && git add -u && git commit -m '🤔WIP [ci skip]'
-    oops = !git add . && git add -u && git commit -m '🤐Oops '
-	revise = !git add . && git add -u && git commit -m '🤓Revice [ci skip]'
-	tidy = !git add . && git add -u && git commit -m '🙄Tidy up'    
-    update = !git add . && git add -u && git commit -m 'Update'
+	wip = !git commit -m ':bowtie: WIP'
+    cleanup = !git commit -m ':sparkles: Cleanup'
 # hub
     pr = pull-request
 	ksdiff = !git difftool -y -t Kaleidoscope
