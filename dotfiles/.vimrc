@@ -7,6 +7,7 @@ call vundle#rc()
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kien/ctrlp.vim'
+Plugin 'thinca/vim-quickrun'
 Plugin 'toyamarinyon/vim-swift'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'fatih/vim-go'
@@ -18,6 +19,10 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'tomasr/molokai'
+Plugin 'scrooloose/nerdtree'
+Plugin 'rhysd/vim-crystal'
+Plugin 'kamwitsta/nordisk'
+Plugin 'dunckr/vim-monokai-soda'
 
 filetype plugin indent on
 
@@ -26,12 +31,13 @@ filetype indent on
 
 " Syntax
 syntax enable
-colorscheme iceberg 
+colorscheme molokai 
 
 set laststatus=2
 set showtabline=2
 set noshowmode
 
+set hidden
 set noundofile
 set nobackup
 set noswapfile
@@ -53,12 +59,14 @@ set shiftround
 set clipboard+=unnamed
 set wildmode=longest:list,full
 set list
+set backspace=indent,eol,start
 "set listchars=tab:¦\ ,eol:¬,trail:-,nbsp:%,extends:>,precedes:<
 set listchars=eol:¬,tab:▸\ 
 set fillchars=vert:\ ,fold:\ ,diff:\
+set t_Co=256
 
 " like Emacs on InsertMode
-imap <C-k> <ESC>d$i
+imap <C-k> <ESC><S-d>i
 imap <C-y> <ESC>pi
 imap <C-d> <Del>
 
@@ -83,11 +91,16 @@ cnoremap <M-f> <S-Right>
 " alias ESC
 imap <C-c> <ESC>
 
+" NERDTree
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
 " ctrl-p
 let g:ctrlp_map = '<c-p>'
 
 " Syntax
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile Fastfile set filetype=ruby
+au BufRead,BufNewFile Podfile set filetype=ruby
 
 let g:molokai_original = 1
 let g:rehash256 = 1
@@ -100,4 +113,22 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#262626 ctermbg=236
 autocmd VimEnter * :IndentGuidesEnable
+
+" quickrun
+let g:quickrun_config = {'*': {'split': ''}}
+set splitbelow
+let g:quickrun_config['swift'] = {
+\ 'command': 'swift',
+\ 'exec': '%c %o %s',
+\}
+
+command! -nargs=? Jq call s:Jq(<f-args>)
+function! s:Jq(...)
+    if 0 == a:0
+        let l:arg = "."
+    else
+        let l:arg = a:1
+    endif
+    execute "%! jq \"" . l:arg . "\""
+endfunction
 

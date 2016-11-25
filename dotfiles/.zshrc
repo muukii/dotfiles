@@ -3,7 +3,7 @@
 # File:        .zshrc
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
 # Last Change: 08-Nov-2016.
-
+export XDG_CONFIG_HOME="$HOME/.config"
 # source common shell run command
 source ~/.shrc.common
 
