@@ -23,6 +23,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'rhysd/vim-crystal'
 Plugin 'kamwitsta/nordisk'
 Plugin 'dunckr/vim-monokai-soda'
+Plugin 'tikhomirov/vim-glsl'
 
 filetype plugin indent on
 

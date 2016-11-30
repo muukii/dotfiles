@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "【日報】{date:short} 木村 寛\n\n皆様\n\nおつかれさまです。\n本日の日報をお送りいたします。\n\n## 9:50 出社\n\n## 21:00 退勤\n\n## 明日のタスク\n\n## 一言",
+    "dontautoexpand" : true,
+    "uid" : "D2837E88-1431-4074-9989-6A89BB209C1D",
+    "name" : "daily",
+    "keyword" : "daily"
+  }
+}

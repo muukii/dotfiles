@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>slackfred</name>
+  <version>0.3</version>
+  <bundle>fspinillo.alfredv2.slackfred</bundle>
+  <updated>1420662555</updated>
+  <file>slackfred.alfredworkflow</file>
+</workflow>

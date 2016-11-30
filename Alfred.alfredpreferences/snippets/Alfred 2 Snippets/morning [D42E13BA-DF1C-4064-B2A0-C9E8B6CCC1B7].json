@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "*{date}*\n\n```\n# Hiroshi Kimura\n\n## Yesterday\n\n\n## Today\n\n\n```",
+    "dontautoexpand" : true,
+    "uid" : "D42E13BA-DF1C-4064-B2A0-C9E8B6CCC1B7",
+    "name" : "morning",
+    "keyword" : "morning"
+  }
+}

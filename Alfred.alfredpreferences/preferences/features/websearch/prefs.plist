@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>7C60041C-71F2-427F-9CD8-B76652CC85C0</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>jira</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>JIRA</string>
+			<key>url</key>
+			<string>https://eureka.atlassian.net/browse/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>F122619D-CEC8-455C-A070-7EF1C38EB2E4</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>cplsmail</string>
+			<key>plusSpaces</key>
+			<true/>
+			<key>text</key>
+			<string>Couples-Mail</string>
+			<key>url</key>
+			<string>https://admin.couples.lv/admin/users/index?nickname=&amp;dob=&amp;mail={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>FE0946BD-FED5-4B0E-93D6-E50160832556</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>cplsid</string>
+			<key>plusSpaces</key>
+			<true/>
+			<key>text</key>
+			<string>Couples-ID</string>
+			<key>url</key>
+			<string>https://admin.couples.lv/admin/users/detail?user_id={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

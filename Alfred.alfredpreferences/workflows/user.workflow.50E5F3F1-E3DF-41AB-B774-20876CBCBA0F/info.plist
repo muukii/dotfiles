@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>2E187B46-6FC2-437A-9F03-EBF245391711</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08015D7E-FB22-46EB-AD80-465D3B05CCAA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Screenhero, Inc.</string>
+	<key>description</key>
+	<string>Share your screen with Screenhero</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Screenhero</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>sh</string>
+				<key>script</key>
+				<string>on alfred_result_items(itemList)	set theResult to "&lt;?xml version=\"1.0\"?&gt;&lt;items&gt;"	repeat with alfred_item in itemList		set theResult to theResult &amp; alfred_item	end repeat	set theResult to theResult &amp; "&lt;/items&gt;"	return theResultend alfred_result_items#on alfred_result_item_with_icon(uid, title, subtitle, arg, valid, icon)on alfred_result_item_with_icon(uid, title, subtitle, arg, valid)	set theResult to "&lt;item uid=\"" &amp; uid &amp; "\" arg=\"" &amp; my q_encode(arg) &amp; "\" valid=\"" &amp; valid &amp; "\"&gt;"	set theResult to theResult &amp; "&lt;title&gt;" &amp; my q_encode(title) &amp; "&lt;/title&gt;"	set theResult to theResult &amp; "&lt;subtitle&gt;" &amp; my q_encode(subtitle) &amp; "&lt;/subtitle&gt;"	set theResult to theResult &amp; "&lt;icon type=\"fileicon\"&gt;" &amp; "/Applications/Screenhero.app" &amp; "&lt;/icon&gt;"	set theResult to theResult &amp; "&lt;/item&gt;"	return theResultend alfred_result_item_with_iconon q_encode(str)	if class of str is not text or (my q_is_empty(str)) then return str	set s to ""	repeat with sRef in str		set c to contents of sRef		if c is in {"&amp;", "'", "\"", "&lt;", "&gt;"} then			if c is "&amp;" then				set s to s &amp; "&amp;amp;"			else if c is "'" then				set s to s &amp; "&amp;apos;"			else if c is "\"" then				set s to s &amp; "&amp;quot;"			else if c is "&lt;" then				set s to s &amp; "&amp;lt;"			else if c is "&gt;" then				set s to s &amp; "&amp;gt;"			end if		else			set s to s &amp; c		end if	end repeat	return send q_encodeon q_is_empty(str)	if str is missing value then return true	return length of (my q_trim(str)) is 0end q_is_emptyon q_trim(str)	if class of str is not text or class of str is not string or str is missing value then return str	if str is "" then return str		repeat while str begins with " "		try			set str to items 2 thru -1 of str as text		on error msg			return ""		end try	end repeat	repeat while str ends with " "		try			set str to items 1 thru -2 of str as text		on error			return ""		end try	end repeat	return strend q_trimon split(someText, delimiter)	set AppleScript's text item delimiters to delimiter	set someText to someText's text items	set AppleScript's text item delimiters to {""} --&gt; restore delimiters to default value	return someTextend splittell application "Screenhero"	set buddyList to get_online_buddies ("{query}")	#	set buddyList to get_online_buddies ("don")	set alfred_result_list to {}		repeat with buddy in buddyList		set buddyData to my split(buddy, ":::")		set buddyJid to item 1 of buddyData		set buddyName to item 2 of buddyData		set end of alfred_result_list to my alfred_result_item_with_icon(buddyJid, buddyName, "Share screen with " &amp; buddyName, buddyJid, "YES")	end repeat		my alfred_result_items(alfred_result_list)end tell</string>
+				<key>subtext</key>
+				<string>Share your screen with a buddy</string>
+				<key>title</key>
+				<string>Screenhero</string>
+				<key>type</key>
+				<integer>6</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2E187B46-6FC2-437A-9F03-EBF245391711</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>tell application "Screenhero"	start_screenshare ("{query}")end tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>08015D7E-FB22-46EB-AD80-465D3B05CCAA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>08015D7E-FB22-46EB-AD80-465D3B05CCAA</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>2E187B46-6FC2-437A-9F03-EBF245391711</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://screenhero.com</string>
+</dict>
+</plist>
