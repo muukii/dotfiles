@@ -153,3 +153,5 @@
 #   program = gpg
 [commit]
 	gpgsign = false
+[github]
+	user = muukii

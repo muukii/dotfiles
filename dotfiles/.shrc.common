@@ -27,8 +27,6 @@ if [[ $? == 0 ]]; then
     alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 fi
 
-alias jenkins='java -jar /usr/local/opt/jenkins/libexec/jenkins.war'
-
 set_gitst()
 {
     case $1 in
@@ -55,14 +53,12 @@ parse_git_branch()
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
 }
 
-#eval "$(pyenv init -)"
 export PATH=$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH
-#export PATH=$HOME/.pyenv/versions/2.7.8/bin:$PATH
 
 # go version manager
 if [ -s "$HOME/.gvm/scripts/gvm" ]; then
-  source "$HOME/.gvm/scripts/gvm"
-  #gvm use go1.6
+    source "$HOME/.gvm/scripts/gvm"
+    #gvm use go1.6
 fi
 
 # Go

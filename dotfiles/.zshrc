@@ -1,11 +1,18 @@
 # vim:set fdm=marker:
+
+# zplug
+# source ~/.zplug/init.zsh
+# zplug "sorin-ionescu/prezto"
+# zplug load --verbose 
 #
-# File:        .zshrc
-# Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 08-Nov-2016.
+
 export XDG_CONFIG_HOME="$HOME/.config"
 # source common shell run command
 source ~/.shrc.common
+
+# Powerline
+# powerline-daemon -q
+# . /Users/muukii/.pyenv/versions/3.5.2/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # use key map like emacs
 bindkey -e
@@ -173,9 +180,6 @@ alias dat='docker attach `dl`'
 #Hub
 eval "$(hub alias -s)"
 
-## server
-alias server='python -m SimpleHTTPServer'
-
 ## bear
 alias bear='~/dotfiles/scripts/bear.swift'
 
@@ -184,6 +188,11 @@ alias processing='processing-java'
 
 # Check $fpath
 echo $fpath
+
+## xcode
+function xcode() {
+    open -a ${$(xcode-select -p)%/*/*} $(ls | grep --color=never .xcworkspace | head -1)
+}
 
 ## peco
 function ch() {

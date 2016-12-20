@@ -5,6 +5,8 @@ set rtp+=~/.vim/vundle.git
 call vundle#rc()
 
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kien/ctrlp.vim'
 Plugin 'thinca/vim-quickrun'
@@ -24,6 +26,7 @@ Plugin 'rhysd/vim-crystal'
 Plugin 'kamwitsta/nordisk'
 Plugin 'dunckr/vim-monokai-soda'
 Plugin 'tikhomirov/vim-glsl'
+Plugin 'tpope/vim-fugitive'
 
 filetype plugin indent on
 
