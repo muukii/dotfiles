@@ -90,7 +90,7 @@
   editor:
     backUpBeforeSaving: true
     fontFamily: "SourceCodePro-Regular"
-    fontSize: 13
+    fontSize: 12
     invisibles:
       tab: "▸"
     showIndentGuide: true
@@ -110,6 +110,9 @@
     newGistsDefaultToPrivate: true
     openAfterCreate: true
     userToken: "b2b1dc297c9d17d0c6ebadd713fc53aee6a28bc5"
+  "git-plus":
+    general:
+      _analyticsUserId: "35f52567-0fc7-485f-9a43-89917eb6897a"
   "git-projects":
     rootPath: "~/Develop; ~/Dropbox/"
   "go-playground":

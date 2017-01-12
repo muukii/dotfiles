@@ -83,7 +83,7 @@
 		<key>xcode.syntax.attribute</key>
 		<string>0.106702 0.169546 0.369512 1</string>
 		<key>xcode.syntax.character</key>
-		<string>0.397916 0.386064 0.538436 1</string>
+		<string>0.941176 0.376471 0.247059 1</string>
 		<key>xcode.syntax.comment</key>
 		<string>0.537 0.77791 0.888352 1</string>
 		<key>xcode.syntax.comment.doc</key>
@@ -117,13 +117,13 @@
 		<key>xcode.syntax.keyword</key>
 		<string>0.907133 0.150167 0.208045 1</string>
 		<key>xcode.syntax.number</key>
-		<string>0.397916 0.386064 0.538436 1</string>
+		<string>0.941176 0.376471 0.247059 1</string>
 		<key>xcode.syntax.plain</key>
-		<string>0.309988 0.309988 0.309988 1</string>
+		<string>0.4 0.4 0.4 1</string>
 		<key>xcode.syntax.preprocessor</key>
 		<string>0.878137 0.483477 0.499753 1</string>
 		<key>xcode.syntax.string</key>
-		<string>0.397916 0.386064 0.538436 1</string>
+		<string>0.941176 0.376471 0.247059 1</string>
 		<key>xcode.syntax.url</key>
 		<string>0.878137 0.483477 0.499753 1</string>
 	</dict>
@@ -132,7 +132,7 @@
 		<key>xcode.syntax.attribute</key>
 		<string>SourceCodePro-Medium - 13.0</string>
 		<key>xcode.syntax.character</key>
-		<string>SourceCodePro-Medium - 13.0</string>
+		<string>SourceCodePro-Bold - 13.0</string>
 		<key>xcode.syntax.comment</key>
 		<string>SourceCodePro-Bold - 13.0</string>
 		<key>xcode.syntax.comment.doc</key>
@@ -166,13 +166,13 @@
 		<key>xcode.syntax.keyword</key>
 		<string>SourceCodePro-Bold - 13.0</string>
 		<key>xcode.syntax.number</key>
-		<string>SourceCodePro-Medium - 13.0</string>
+		<string>SourceCodePro-Bold - 13.0</string>
 		<key>xcode.syntax.plain</key>
 		<string>SourceCodePro-Medium - 13.0</string>
 		<key>xcode.syntax.preprocessor</key>
 		<string>SourceCodePro-Medium - 13.0</string>
 		<key>xcode.syntax.string</key>
-		<string>SourceCodePro-Medium - 13.0</string>
+		<string>SourceCodePro-Bold - 13.0</string>
 		<key>xcode.syntax.url</key>
 		<string>SourceCodePro-Medium - 13.0</string>
 	</dict>

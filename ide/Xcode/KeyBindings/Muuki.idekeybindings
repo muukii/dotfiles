@@ -88,6 +88,28 @@
 			</dict>
 			<dict>
 				<key>Action</key>
+				<string>toggleMessageBubbles:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDESourceEditor.CmdDefinition.ShowIssueBubbles</string>
+				<key>CommandID</key>
+				<string>Xcode.IDESourceEditor.CmdDefinition.ShowIssueBubbles</string>
+				<key>Group</key>
+				<string>Editor Menu for Asset Catalog</string>
+				<key>GroupID</key>
+				<string>Xcode.IDESourceCodeComparisonEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Issues</string>
+				<key>Title</key>
+				<string>Show All Issues</string>
+			</dict>
+			<dict>
+				<key>Action</key>
 				<string>toggleTokenizedEditing:</string>
 				<key>Alternate</key>
 				<string>NO</string>
@@ -107,6 +129,48 @@
 				<string>NO</string>
 				<key>Title</key>
 				<string>Edit All in Scope</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>toggleMessageBubbles:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDESourceEditor.CmdDefinition.ShowIssueBubbles</string>
+				<key>CommandID</key>
+				<string>Xcode.IDESourceEditor.CmdDefinition.ShowIssueBubbles</string>
+				<key>Group</key>
+				<string>Editor Menu for Playground</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPlaygroundEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Issues</string>
+				<key>Title</key>
+				<string>Show All Issues</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>insertImageLiteralAction:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEPlaygroundEditor.CmdDefinition.InsertImageLiteral</string>
+				<key>Group</key>
+				<string>Editor Menu for Playground</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPlaygroundEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^@m</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Insert Image Literal…</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -152,11 +216,13 @@
 			</dict>
 			<dict>
 				<key>Action</key>
-				<string>_invokeSourceEditorExtensionCommand:</string>
+				<string>toggleMessageBubbles:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDESourceEditor.CmdDefinition.ShowIssueBubbles</string>
 				<key>CommandID</key>
-				<string>IDESourceEditorExtension:com.tid.XcodeSourceEditorExtension-Alignment.Alignment,IDESourceEditorExtensionCommand:com.tid.XcodeSourceEditorExtension-Alignment.Alignment.SourceEditorCommand</string>
+				<string>Xcode.IDESourceEditor.CmdDefinition.ShowIssueBubbles</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
 				<key>GroupID</key>
@@ -166,9 +232,9 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>Alignment</string>
+				<string>Issues</string>
 				<key>Title</key>
-				<string>Align</string>
+				<string>Show All Issues</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -191,6 +257,48 @@
 				<string>NO</string>
 				<key>Title</key>
 				<string>Edit All in Scope</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>toggleMessageBubbles:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDESourceEditor.CmdDefinition.ShowIssueBubbles</string>
+				<key>CommandID</key>
+				<string>Xcode.IDESourceEditor.CmdDefinition.ShowIssueBubbles</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code Comparison</string>
+				<key>GroupID</key>
+				<string>Xcode.IDESourceCodeComparisonEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Issues</string>
+				<key>Title</key>
+				<string>Show All Issues</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.tid.XcodeSourceEditorExtension-Alignment.Alignment,IDESourceEditorExtensionCommand:com.tid.XcodeSourceEditorExtension-Alignment.Alignment.SourceEditorCommand</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDESourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Alignment</string>
+				<key>Title</key>
+				<string>Align</string>
 			</dict>
 		</array>
 		<key>Version</key>
