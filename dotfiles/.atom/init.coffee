@@ -13,5 +13,4 @@
 #   if path.extname(editor.getPath()) is '.md'
 #     editor.setSoftWrap(true)
 
-#process.env.GOPATH = "/Users/Muukii/Develop/goapp/instagram"
 process.env.PATH = process.env.PATH + ":/usr/local/bin/"

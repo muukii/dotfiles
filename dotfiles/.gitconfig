@@ -112,6 +112,7 @@
 # util
 	wip = !git commit -m ':bowtie: WIP'
     cleanup = !git commit -m ':sparkles: Cleanup'
+    update = !git commit -m ':evergreen_tree: Update'
 # hub
     pr = pull-request
 	ksdiff = !git difftool -y -t Kaleidoscope
@@ -146,7 +147,7 @@
 	smudge = git-lfs smudge %f
 	required = true
 [mergetool]
-	keepBackup = false
+	keepBackup = true
 [commit]
 #	gpgsign = false
 [gpg]

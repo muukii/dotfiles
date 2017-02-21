@@ -2,7 +2,7 @@
 #
 # File:        .shrc.common
 # Maintainer:  Shintaro Kaneko <kaneshin0120@gmail.com>
-# Last Change: 25-Jul-2016.
+# Last Change: 06-Feb-2017.
 
 export LANG=en_US.UTF-8
 
@@ -56,10 +56,10 @@ parse_git_branch()
 export PATH=$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH
 
 # go version manager
-if [ -s "$HOME/.gvm/scripts/gvm" ]; then
-    source "$HOME/.gvm/scripts/gvm"
-    #gvm use go1.6
-fi
+export GOPATH="$HOME/develop"   
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
 
 # Go
 #export GOPATH=~/go

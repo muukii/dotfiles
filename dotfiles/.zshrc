@@ -233,15 +233,9 @@ function incremental_mdfind() {
 zle -N incremental_mdfind
 bindkey '^t' incremental_mdfind
 
-fuction peco-g-add() {
-    local target="$(git status -s | peco --layout bottom-up --prompt 'Add' | awk '{print $2}')"
-    if [ -n "$target" ]; then
-        git add $target
-    fi
+fuction peco-ghq() {
+    ghq look $(ghq list | peco)
 }
-
-zle -N peco-g-add
-bindkey '^g' peco-g-add 
 
 ## anyframe
 #fpath=($HOME/.zsh/anyframe(N-/) $fpath)

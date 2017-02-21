@@ -11,8 +11,10 @@
 		<key>string</key>
 		<string>Space</string>
 	</dict>
+	<key>limit</key>
+	<integer>3</integer>
 	<key>persistFor</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>viewerKeyword</key>
 	<string>cb</string>
 </dict>

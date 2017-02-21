@@ -70,7 +70,7 @@ set fillchars=vert:\ ,fold:\ ,diff:\
 set t_Co=256
 
 " like Emacs on InsertMode
-imap <C-k> <ESC><S-d>i
+imap <C-k> <right><ESC><S-d>a
 imap <C-y> <ESC>pi
 imap <C-d> <Del>
 
