@@ -117,11 +117,7 @@
     pr = pull-request
 	ksdiff = !git difftool -y -t Kaleidoscope
 # worktree
-	wta = "!f() { git worktree add ../$1 $1; cd ../$1; }; f"
-	wtab = "!f() { git worktree add -b ../$1 $1; cd ../$1; }; f"
-	wtad = "!f() { git worktree add -d ../$1 $1; cd ../$1; }; f"
-    wtl = !git worktree list
-    wtp = !git worktree prune
+    w = !git worktree
 # scripts
 	findLargeFiles = !sh ~/dotfiles/scripts/git_find_big.sh
 [filter "media"]

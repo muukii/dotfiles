@@ -27,6 +27,9 @@ gvm:
 
 zsh:
 	brew install zsh
+	brew install z
+	brew install zsh-syntax-highlighting
+	brew install peco
 	sudo sh -c 'echo $(which zsh) >> /etc/shells'
 	chsh -s /usr/local/bin/zsh
 
@@ -41,9 +44,3 @@ rbenv:
 
 swiftenv:
 	git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
-
-peco:
-	wget https://github.com/peco/peco/releases/download/v0.3.3/peco_linux_amd64.tar.gz
-	tar xzvf peco_linux_amd64.tar.gz 
-	mv peco_linux_amd64/peco /usr/local/bin
-	peco --version

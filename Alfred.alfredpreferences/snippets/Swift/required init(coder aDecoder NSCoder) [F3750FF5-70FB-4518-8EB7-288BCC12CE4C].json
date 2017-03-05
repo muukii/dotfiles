@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "required init?(coder aDecoder: NSCoder) {\n  fatalError(\"init(coder:) has not been implemented\")\n}",
+    "dontautoexpand" : true,
+    "uid" : "F3750FF5-70FB-4518-8EB7-288BCC12CE4C",
+    "name" : "required init?(coder aDecoder: NSCoder)",
+    "keyword" : "coder"
+  }
+}

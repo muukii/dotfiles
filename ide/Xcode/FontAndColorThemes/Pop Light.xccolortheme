@@ -132,7 +132,7 @@
 		<key>xcode.syntax.attribute</key>
 		<string>SourceCodePro-Medium - 12.0</string>
 		<key>xcode.syntax.character</key>
-		<string>SourceCodePro-Medium - 12.0</string>
+		<string>SourceCodePro-Bold - 12.0</string>
 		<key>xcode.syntax.comment</key>
 		<string>SourceCodePro-Medium - 12.0</string>
 		<key>xcode.syntax.comment.doc</key>
@@ -144,9 +144,9 @@
 		<key>xcode.syntax.identifier.class.system</key>
 		<string>SourceCodePro-Medium - 12.0</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>SourceCodePro-MediumIt - 12.0</string>
+		<string>SourceCodePro-Medium - 12.0</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>SourceCodePro-MediumIt - 12.0</string>
+		<string>SourceCodePro-Medium - 12.0</string>
 		<key>xcode.syntax.identifier.function</key>
 		<string>SourceCodePro-Medium - 12.0</string>
 		<key>xcode.syntax.identifier.function.system</key>
@@ -166,13 +166,13 @@
 		<key>xcode.syntax.keyword</key>
 		<string>SourceCodePro-Bold - 12.0</string>
 		<key>xcode.syntax.number</key>
-		<string>SourceCodePro-Medium - 12.0</string>
+		<string>SourceCodePro-Bold - 12.0</string>
 		<key>xcode.syntax.plain</key>
 		<string>SourceCodePro-Medium - 12.0</string>
 		<key>xcode.syntax.preprocessor</key>
 		<string>SourceCodePro-Medium - 12.0</string>
 		<key>xcode.syntax.string</key>
-		<string>SourceCodePro-Medium - 12.0</string>
+		<string>SourceCodePro-Bold - 12.0</string>
 		<key>xcode.syntax.url</key>
 		<string>SourceCodePro-Medium - 12.0</string>
 	</dict>
